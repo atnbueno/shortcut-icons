@@ -1,0 +1,386 @@
+/* Shortcut icon colors (iOS 14 palette used by default) */
+
+.c4282601983, .c-red        { background: linear-gradient(#F36F74, #F2585E) }
+.c4251333119, .c-orange     { background: linear-gradient(#FF8E73, #FF7C5C) }
+.c4271458815, .c-tangerine  { background: linear-gradient(#F8AE5F, #F7A145) }
+.c4274264319, .c-yellow     { background: linear-gradient(#E8CA45, #E5C238) }
+.c4292093695, .c-lime       { background: linear-gradient(#53CD6B, #37C553) }
+.c431817727,  .c-teal       { background: linear-gradient(#57CFB4, #2AC7A8) }
+.c1440408063, .c-light-blue { background: linear-gradient(#5ACCDE, #3FC4D9) }
+.c463140863,  .c-blue       { background: linear-gradient(#24BAF7, #00AFF6) }
+.c946986751,  .c-navy       { background: linear-gradient(#5874CA, #3D5EC2) }
+.c2071128575, .c-grape      { background: linear-gradient(#9164C7, #7F4BBE) }
+.c3679049983, .c-purple     { background: linear-gradient(#C085E6, #B671E2) }
+.c3980825855, .c-pink       { background: linear-gradient(#F694D8, #F583D2) }
+.c255,        .c-grey-blue  { background: linear-gradient(#9099A3, #7E8994) }
+.c3031607807, .c-grey-green { background: linear-gradient(#9DA79D, #8D998E) }
+.c2846468607, .c-grey-brown { background: linear-gradient(#A49995, #968984) }
+
+/* Shortcut glyph positions in the sprite (two versions: numeric code and human friendly) */
+
+.g59392::after, .g-ellipsis::after                   { background-position:  83.3333%   0%    }
+.g59395::after, .g-dollar-sign-with-line::after      { background-position:  61.1111%  25%    }
+.g59402::after, .g-movie-camera-filled::after        { background-position:  44.4444%  37.5%  }
+.g59403::after, .g-message-bubbles::after            { background-position:  88.8889%  56.25% }
+.g59405::after, .g-twelve-squares::after             { background-position: 100%       18.75% }
+.g59412::after, .g-globe::after                      { background-position:  72.2222%  68.75% }
+.g59414::after, .g-chat-bubble::after                { background-position:  38.8889%  75%    }
+.g59436::after, .g-laptop::after                     { background-position:  22.2222%  12.5%  }
+.g59437::after, .g-person-2::after                   { background-position:   0%       93.75% }
+.g59445::after, .g-list::after                       { background-position: 100%       93.75% }
+.g59446::after, .g-keyboard::after                   { background-position:   5.5556% 100%    }
+.g59448::after, .g-pound-sign::after                 { background-position:  50%      100%    }
+.g59452::after, .g-car::after                        { background-position:  88.8889%  50%    }
+.g59454::after, .g-target-2::after                   { background-position:  38.8889%  56.25% }
+.g59456::after, .g-football::after                   { background-position:  16.6667%  12.5%  }
+.g59459::after, .g-cloud-service::after              { background-position:  66.6667%  25%    }
+.g59461::after, .g-pill::after                       { background-position:  27.7778%  31.25% }
+.g59465::after, .g-open-book::after                  { background-position:  16.6667%  37.5%  }
+.g59468::after, .g-flower::after                     { background-position:  83.3333%  37.5%  }
+.g59473::after, .g-hammer-2::after                   { background-position: 100%       62.5%  }
+.g59489::after, .g-battery::after                    { background-position:   5.5556%   6.25% }
+.g59494::after, .g-boxed-keyboard::after             { background-position: 100%       81.25% }
+.g59497::after, .g-feed-2::after                     { background-position:  44.4444%  87.5%  }
+.g59508::after, .g-play::after                       { background-position:  11.1111%   6.25% }
+.g59511::after, .g-magic-wand-1::after               { background-position:  27.7778% 100%    }
+.g59512::after, .g-euro-sign::after                  { background-position:  27.7778%  18.75% }
+.g59514::after, .g-yen-sign::after                   { background-position:  83.3333% 100%    }
+.g59515::after, .g-bitcoin-symbol::after             { background-position:  61.1111%  50%    }
+.g59516::after, .g-loading-indicator-2::after        { background-position:  94.4444%  50%    }
+.g59519::after, .g-database::after                   { background-position:  61.1111%  56.25% }
+.g59648::after, .g-airplane::after                   { background-position:  11.1111%  18.75% }
+.g59649::after, .g-alarm-clock::after                { background-position:  11.1111%  25%    }
+.g59650::after, .g-alert-triangle::after             { background-position:  38.8889%  25%    }
+.g59651::after, .g-alien::after                      { background-position:  72.2222%  25%    }
+.g59652::after, .g-ambulance::after                  { background-position: 100%       25%    }
+.g59653::after, .g-archive::after                    { background-position:  33.3333%  31.25% }
+.g59654::after, .g-arrow-curved-left::after          { background-position:  61.1111%  31.25% }
+.g59655::after, .g-arrow-curved-right::after         { background-position:  66.6667%  18.75% }
+.g59656::after, .g-asterisk::after                   { background-position:  94.4444%  31.25% }
+.g59657::after, .g-atom::after                       { background-position:   5.5556%  18.75% }
+.g59658::after, .g-baby::after                       { background-position:  50%       37.5%  }
+.g59659::after, .g-baby-boy::after                   { background-position:  94.4444%  56.25% }
+.g59660::after, .g-bandage::after                    { background-position:  88.8889%  37.5%  }
+.g59661::after, .g-barcode::after                    { background-position:  83.3333%   6.25% }
+.g59662::after, .g-bar-graph::after                  { background-position:  11.1111%  43.75% }
+.g59663::after, .g-baseball::after                   { background-position:  33.3333%  18.75% }
+.g59664::after, .g-basketball::after                 { background-position:  94.4444%   6.25% }
+.g59665::after, .g-bathtub::after                    { background-position:   0%       68.75% }
+.g59666::after, .g-bed::after                        { background-position:  72.2222%   6.25% }
+.g59667::after, .g-bell::after                       { background-position:  38.8889%  68.75% }
+.g59668::after, .g-bicycle::after                    { background-position:  77.7778%  68.75% }
+.g59669::after, .g-binoculars::after                 { background-position:   5.5556%  75%    }
+.g59670::after, .g-bookmark::after                   { background-position:  44.4444%  75%    }
+.g59671::after, .g-bookshelf::after                  { background-position:  72.2222%  75%    }
+.g59672::after, .g-book-with-sash::after             { background-position:  94.4444%  75%    }
+.g59673::after, .g-box-filled::after                 { background-position:  22.2222%  81.25% }
+.g59674::after, .g-box-outline::after                { background-position:  66.6667%  43.75% }
+.g59675::after, .g-braille::after                    { background-position: 100%       12.5%  }
+.g59676::after, .g-briefcase::after                  { background-position:  11.1111%  62.5%  }
+.g59677::after, .g-buildings::after                  { background-position:  38.8889%  62.5%  }
+.g59678::after, .g-bus::after                        { background-position:  61.1111%  62.5%  }
+.g59679::after, .g-cake::after                       { background-position:  22.2222%  50%    }
+.g59680::after, .g-calculator::after                 { background-position:  44.4444%  50%    }
+.g59681::after, .g-calendar::after                   { background-position:  55.5556%  81.25% }
+.g59682::after, .g-camera::after                     { background-position:  88.8889%   0%    }
+.g59683::after, .g-carrot::after                     { background-position:  50%       18.75% }
+.g59684::after, .g-cat::after                        { background-position:  77.7778%  81.25% }
+.g59685::after, .g-chain-link::after                 { background-position:  38.8889%  12.5%  }
+.g59686::after, .g-chemical::after                   { background-position:   0%       87.5%  }
+.g59687::after, .g-child::after                      { background-position:  22.2222%  87.5%  }
+.g59688::after, .g-church::after                     { background-position:  38.8889%  87.5%  }
+.g59690::after, .g-circled-checkmark::after          { background-position:  55.5556%  87.5%  }
+.g59692::after, .g-circled-down-arrow::after         { background-position:  94.4444%  87.5%  }
+.g59693::after, .g-circled-download-arrow::after     { background-position:   5.5556%  93.75% }
+.g59695::after, .g-circled-fast-forward::after       { background-position:  22.2222%  93.75% }
+.g59696::after, .g-circled-left-arrow::after         { background-position:  22.2222%   0%    }
+.g59697::after, .g-circled-lowercase-i::after        { background-position:  50%       93.75% }
+.g59698::after, .g-circled-pi-symbol::after          { background-position:  72.2222%  93.75% }
+.g59699::after, .g-circled-play::after               { background-position:  88.8889%  93.75% }
+.g59700::after, .g-circled-plus::after               { background-position:  94.4444%  93.75% }
+.g59702::after, .g-circled-power::after              { background-position:  11.1111% 100%    }
+.g59703::after, .g-circled-question-mark::after      { background-position:  33.3333% 100%    }
+.g59704::after, .g-circled-rewind::after             { background-position:  55.5556% 100%    }
+.g59705::after, .g-circled-right-arrow::after        { background-position:  88.8889%  12.5%  }
+.g59706::after, .g-circled-stop::after               { background-position:  88.8889% 100%    }
+.g59707::after, .g-circled-up-arrow::after           { background-position:  66.6667%  50%    }
+.g59708::after, .g-circled-upload-arrow::after       { background-position: 100%       50%    }
+.g59709::after, .g-circled-x::after                  { background-position:  16.6667%  56.25% }
+.g59711::after, .g-clipboard-glyph::after            { background-position:  66.6667%  56.25% }
+.g59712::after, .g-clock::after                      { background-position:  94.4444%  12.5%  }
+.g59713::after, .g-clothes-hanger::after             { background-position:  16.6667%  25%    }
+.g59714::after, .g-cloud::after                      { background-position:  77.7778%   0%    }
+.g59715::after, .g-cloud-raining::after              { background-position:  77.7778%  25%    }
+.g59716::after, .g-color-dropper::after              { background-position:   0%       31.25% }
+.g59717::after, .g-compass::after                    { background-position:  38.8889%  31.25% }
+.g59718::after, .g-connected-share-dots::after       { background-position:  66.6667%  31.25% }
+.g59719::after, .g-credit-card::after                { background-position:  72.2222%  18.75% }
+.g59720::after, .g-crop::after                       { background-position: 100%       31.25% }
+.g59721::after, .g-cube::after                       { background-position:  22.2222%  37.5%  }
+.g59722::after, .g-server::after                     { background-position:  55.5556%  37.5%  }
+.g59723::after, .g-dice::after                       { background-position: 100%       56.25% }
+.g59724::after, .g-directions-signs::after           { background-position:  94.4444%  37.5%  }
+.g59725::after, .g-document-css::after               { background-position:   0%       25%    }
+.g59726::after, .g-document-filled::after            { background-position:  16.6667%  43.75% }
+.g59727::after, .g-document-outline::after           { background-position:  44.4444%  43.75% }
+.g59728::after, .g-dog::after                        { background-position:   0%       12.5%  }
+.g59729::after, .g-double-quote::after               { background-position:  88.8889%   6.25% }
+.g59730::after, .g-drama-masks::after                { background-position:  22.2222%  68.75% }
+.g59731::after, .g-evergreen-tree::after             { background-position:  44.4444%  68.75% }
+.g59732::after, .g-feed-1::after                     { background-position:  83.3333%  68.75% }
+.g59733::after, .g-filmstrip::after                  { background-position:  11.1111%  75%    }
+.g59734::after, .g-fire::after                       { background-position:  50%       75%    }
+.g59735::after, .g-fish::after                       { background-position:  77.7778%  75%    }
+.g59736::after, .g-flag::after                       { background-position: 100%       75%    }
+.g59737::after, .g-folder::after                     { background-position:  27.7778%  81.25% }
+.g59738::after, .g-footprints::after                 { background-position:  72.2222%  43.75% }
+.g59739::after, .g-four-squares::after               { background-position: 100%       43.75% }
+.g59740::after, .g-fruit::after                      { background-position:  16.6667%  62.5%  }
+.g59741::after, .g-fuel-station::after               { background-position:  44.4444%  62.5%  }
+.g59742::after, .g-game-controller::after            { background-position:  66.6667%  62.5%  }
+.g59743::after, .g-gears::after                      { background-position:  27.7778%  50%    }
+.g59744::after, .g-gift::after                       { background-position:  50%       50%    }
+.g59745::after, .g-glasses::after                    { background-position:  44.4444%  18.75% }
+.g59746::after, .g-graduate-cap::after               { background-position:  83.3333%  12.5%  }
+.g59747::after, .g-grocery-store::after              { background-position:  33.3333%  12.5%  }
+.g59748::after, .g-hammer-1::after                   { background-position:  83.3333%  81.25% }
+.g59749::after, .g-hammer-and-wrench::after          { background-position:  33.3333%   6.25% }
+.g59750::after, .g-handbag::after                    { background-position:   5.5556%  87.5%  }
+.g59751::after, .g-hand-with-spread-fingers::after   { background-position:  27.7778%  87.5%  }
+.g59752::after, .g-hard-drive::after                 { background-position:  27.7778%   0%    }
+.g59753::after, .g-headphones::after                 { background-position:  50%       87.5%  }
+.g59754::after, .g-heart::after                      { background-position:  61.1111%  87.5%  }
+.g59755::after, .g-home::after                       { background-position:  77.7778%  87.5%  }
+.g59756::after, .g-horse::after                      { background-position:  11.1111%   0%    }
+.g59757::after, .g-hourglass::after                  { background-position:  11.1111%  93.75% }
+.g59758::after, .g-infinity::after                   { background-position:  16.6667%   6.25% }
+.g59759::after, .g-inhaler::after                    { background-position:  27.7778%  93.75% }
+.g59760::after, .g-key::after                        { background-position:  38.8889%  93.75% }
+.g59761::after, .g-laundry-machine::after            { background-position:  55.5556%  93.75% }
+.g59762::after, .g-life-preserver::after             { background-position:  55.5556%   0%    }
+.g59763::after, .g-light-bulb::after                 { background-position:  33.3333%   0%    }
+.g59764::after, .g-lightning-bolt::after             { background-position:  16.6667%  18.75% }
+.g59767::after, .g-loading-indicator-1::after        { background-position:  38.8889% 100%    }
+.g59768::after, .g-location-arrow::after             { background-position:  61.1111% 100%    }
+.g59769::after, .g-location-pin::after               { background-position:  16.6667%   0%    }
+.g59770::after, .g-lock::after                       { background-position:  38.8889%  18.75% }
+.g59771::after, .g-magic-wand-2::after               { background-position:  72.2222%  50%    }
+.g59772::after, .g-magnifying-glass::after           { background-position:   0%       56.25% }
+.g59773::after, .g-mail-envelope::after              { background-position:  22.2222%  56.25% }
+.g59774::after, .g-mail-envelope-open::after         { background-position:  44.4444%  56.25% }
+.g59775::after, .g-man::after                        { background-position:  72.2222%  56.25% }
+.g59776::after, .g-martini-glass::after              { background-position: 100%        0%    }
+.g59777::after, .g-masquerade-mask::after            { background-position:  22.2222%  25%    }
+.g59778::after, .g-medicine-bottle::after            { background-position:   0%        0%    }
+.g59779::after, .g-message-bubble::after             { background-position:  83.3333%  25%    }
+.g59780::after, .g-microphone::after                 { background-position:   5.5556%  31.25% }
+.g59781::after, .g-microscope::after                 { background-position:  44.4444%  31.25% }
+.g59782::after, .g-moon::after                       { background-position:  72.2222%  31.25% }
+.g59783::after, .g-motorcycle::after                 { background-position:  77.7778%  18.75% }
+.g59784::after, .g-mountain-picture::after           { background-position:   0%       37.5%  }
+.g59785::after, .g-mountains::after                  { background-position:  11.1111%  12.5%  }
+.g59786::after, .g-move-arrows::after                { background-position:  61.1111%  37.5%  }
+.g59788::after, .g-movie-ticket::after               { background-position: 100%       37.5%  }
+.g59789::after, .g-mug::after                        { background-position:   5.5556%  25%    }
+.g59790::after, .g-music-beamed-eighth-notes::after  { background-position:  22.2222%  43.75% }
+.g59791::after, .g-news-article::after               { background-position:  50%       43.75% }
+.g59792::after, .g-oven::after                       { background-position:  88.8889%  62.5%  }
+.g59793::after, .g-paintbrush::after                 { background-position:   5.5556%  12.5%  }
+.g59794::after, .g-paper-clip::after                 { background-position:  27.7778%  68.75% }
+.g59795::after, .g-parking-symbol::after             { background-position:  50%       68.75% }
+.g59796::after, .g-pawprint::after                   { background-position:  88.8889%  68.75% }
+.g59797::after, .g-peace-sign::after                 { background-position:  16.6667%  75%    }
+.g59798::after, .g-pencil::after                     { background-position:  55.5556%  75%    }
+.g59799::after, .g-people-three-overlapping::after   { background-position:  83.3333%  75%    }
+.g59800::after, .g-people-two-overlapping::after     { background-position:   0%       81.25% }
+.g59801::after, .g-person-1::after                   { background-position:  33.3333%  81.25% }
+.g59802::after, .g-person-at-podium::after           { background-position:  77.7778%  43.75% }
+.g59803::after, .g-person-dancing::after             { background-position:   0%       50%    }
+.g59804::after, .g-person-giving-speech::after       { background-position:  22.2222%  62.5%  }
+.g59805::after, .g-person-hiking::after              { background-position:  50%       62.5%  }
+.g59806::after, .g-person-in-wheelchair::after       { background-position:  72.2222%  62.5%  }
+.g59807::after, .g-person-lifting-weight::after      { background-position:  33.3333%  50%    }
+.g59808::after, .g-person-running::after             { background-position:   0%        6.25% }
+.g59809::after, .g-person-skiing::after              { background-position:  61.1111%  81.25% }
+.g59810::after, .g-person-snowboarding::after        { background-position:  72.2222%  81.25% }
+.g59811::after, .g-person-swimming::after            { background-position:  66.6667%  12.5%  }
+.g59812::after, .g-person-walking::after             { background-position:  88.8889%  81.25% }
+.g59813::after, .g-person-walking-with-cane::after   { background-position:  72.2222%   0%    }
+.g59814::after, .g-phone::after                      { background-position:  11.1111%  87.5%  }
+.g59815::after, .g-pills::after                      { background-position:   5.5556%   0%    }
+.g59816::after, .g-podcasts::after                   { background-position:  55.5556%  18.75% }
+.g59817::after, .g-printer::after                    { background-position:  27.7778%  12.5%  }
+.g59818::after, .g-puzzle-piece::after               { background-position:  66.6667%  87.5%  }
+.g59819::after, .g-qr-code::after                    { background-position:  83.3333%  87.5%  }
+.g59820::after, .g-recycle::after                    { background-position:  61.1111%  18.75% }
+.g59821::after, .g-repost-arrows::after              { background-position:  16.6667%  93.75% }
+.g59822::after, .g-rocket::after                     { background-position:  44.4444%  12.5%  }
+.g59823::after, .g-sailboat::after                   { background-position:  44.4444%   6.25% }
+.g59824::after, .g-scissors::after                   { background-position:  50%        0%    }
+.g59825::after, .g-screwdriver::after                { background-position:  61.1111%  93.75% }
+.g59826::after, .g-network-storage::after            { background-position:  77.7778%  93.75% }
+.g59827::after, .g-shirt::after                      { background-position:  50%       12.5%  }
+.g59828::after, .g-shopping-cart::after              { background-position:  66.6667%   0%    }
+.g59829::after, .g-shower::after                     { background-position:  27.7778%   6.25% }
+.g59830::after, .g-shrink-arrows::after              { background-position:  16.6667% 100%    }
+.g59832::after, .g-shuffle-arrows::after             { background-position:  66.6667% 100%    }
+.g59833::after, .g-sliders::after                    { background-position:  94.4444%   0%    }
+.g59834::after, .g-smiley-face::after                { background-position:  94.4444% 100%    }
+.g59835::after, .g-snowflake::after                  { background-position:  77.7778%  50%    }
+.g59836::after, .g-soaring-paper-airplane::after     { background-position:   5.5556%  56.25% }
+.g59837::after, .g-soccer-ball::after                { background-position:  27.7778%  56.25% }
+.g59838::after, .g-sparkling-bell::after             { background-position:  50%       56.25% }
+.g59839::after, .g-speaker-wave1::after              { background-position:  77.7778%  56.25% }
+.g59840::after, .g-staircase::after                  { background-position:  50%        6.25% }
+.g59841::after, .g-star::after                       { background-position:  27.7778%  25%    }
+.g59842::after, .g-steaming-bowl::after              { background-position:  44.4444%  25%    }
+.g59843::after, .g-stethoscope::after                { background-position:  88.8889%  25%    }
+.g59844::after, .g-stopwatch::after                  { background-position:  11.1111%  31.25% }
+.g59845::after, .g-sun::after                        { background-position:  50%       31.25% }
+.g59846::after, .g-sync-arrows::after                { background-position:  77.7778%  31.25% }
+.g59847::after, .g-syringe::after                    { background-position:  83.3333%  18.75% }
+.g59848::after, .g-tag::after                        { background-position:   5.5556%  37.5%  }
+.g59849::after, .g-target-1::after                   { background-position:  27.7778%  37.5%  }
+.g59850::after, .g-telescope::after                  { background-position:  66.6667%  37.5%  }
+.g59851::after, .g-television::after                 { background-position:   0%       62.5%  }
+.g59852::after, .g-tennis-ball::after                { background-position:   0%       43.75% }
+.g59853::after, .g-text-symbol::after                { background-position: 100%        6.25% }
+.g59854::after, .g-thermometer::after                { background-position:  27.7778%  43.75% }
+.g59856::after, .g-three-overlapping-circles::after  { background-position:  66.6667%   6.25% }
+.g59857::after, .g-thumbs-up::after                  { background-position:   5.5556%  68.75% }
+.g59859::after, .g-trash::after                      { background-position:  55.5556%  68.75% }
+.g59860::after, .g-trophy::after                     { background-position:  94.4444%  68.75% }
+.g59861::after, .g-umbrella::after                   { background-position:  22.2222%  75%    }
+.g59862::after, .g-unlock::after                     { background-position:  61.1111%  75%    }
+.g59863::after, .g-utensils::after                   { background-position:  88.8889%  75%    }
+.g59864::after, .g-video-symbol::after               { background-position:   5.5556%  81.25% }
+.g59865::after, .g-watch::after                      { background-position:  38.8889%  81.25% }
+.g59866::after, .g-water-drop::after                 { background-position:  83.3333%  43.75% }
+.g59867::after, .g-wifi::after                      { background-position:   5.5556%  50%    }
+.g59868::after, .g-wine-bottle::after                { background-position:  27.7778%  62.5%  }
+.g59869::after, .g-woman::after                      { background-position:  55.5556%  62.5%  }
+.g59870::after, .g-wrench::after                     { background-position:  77.7778%  62.5%  }
+.g61440::after, .g-shortcuts-icon::after             { background-position:  38.8889%   0%    }
+.g61442::after, .g-book-closed::after                { background-position:  50%       25%    }
+.g61444::after, .g-map::after                        { background-position:  16.6667%  31.25% }
+.g61446::after, .g-car-multiple::after               { background-position:  83.3333%  31.25% }
+.g61447::after, .g-bolt-car::after                   { background-position:  88.8889%  18.75% }
+.g61448::after, .g-bus-double-decker::after          { background-position:  55.5556%   6.25% }
+.g61449::after, .g-tram::after                       { background-position:  33.3333%  37.5%  }
+.g61450::after, .g-tram-tunnel::after                { background-position:  72.2222%  37.5%  }
+.g61452::after, .g-gauge::after                      { background-position:   5.5556%  43.75% }
+.g61453::after, .g-speedometer::after                { background-position:   0%       18.75% }
+.g61454::after, .g-barometer::after                  { background-position:  33.3333%  43.75% }
+.g61455::after, .g-network::after                    { background-position:  55.5556%  43.75% }
+.g61456::after, .g-rectangle-stack::after            { background-position:  94.4444%  62.5%  }
+.g61457::after, .g-square-stack::after               { background-position:  11.1111%  68.75% }
+.g61458::after, .g-3d-square-stack::after            { background-position:  61.1111%   6.25% }
+.g61459::after, .g-photo-stack::after                { background-position:  61.1111%  68.75% }
+.g61460::after, .g-photo-stack-angled::after         { background-position: 100%       68.75% }
+.g61461::after, .g-camera-aperture::after            { background-position:  27.7778%  75%    }
+.g61462::after, .g-paper-plane-circle::after         { background-position:  66.6667%  75%    }
+.g61464::after, .g-note-icon::after                  { background-position:  11.1111%  81.25% }
+.g61465::after, .g-note-text::after                  { background-position:  44.4444%  81.25% }
+.g61466::after, .g-note-text-badge-plus::after       { background-position:  88.8889%  43.75% }
+.g61467::after, .g-send-message::after               { background-position:  11.1111%  50%    }
+.g61468::after, .g-add-message::after                { background-position:  33.3333%  62.5%  }
+.g61470::after, .g-speaker-wave2::after              { background-position:  83.3333%  62.5%  }
+.g61471::after, .g-speaker-wave3::after              { background-position:  38.8889%  50%    }
+.g61472::after, .g-speaker-slash::after              { background-position:  55.5556%  50%    }
+.g61473::after, .g-speaker::after                    { background-position:  66.6667%  81.25% }
+.g61474::after, .g-tv-and-hifi-speaker::after        { background-position:  22.2222%   6.25% }
+.g61475::after, .g-earpods::after                    { background-position:  72.2222%  12.5%  }
+.g61476::after, .g-airpods::after                    { background-position:  94.4444%  81.25% }
+.g61477::after, .g-airpods-pro::after                { background-position:  55.5556%  12.5%  }
+.g61478::after, .g-hifi-speaker::after               { background-position:  16.6667%  87.5%  }
+.g61479::after, .g-headphones-circle::after          { background-position:  33.3333%  87.5%  }
+.g61480::after, .g-radio::after                      { background-position:  22.2222%  18.75% }
+.g61481::after, .g-hearing-aid::after                { background-position:  61.1111%   0%    }
+.g61482::after, .g-apple-tv::after                   { background-position:  72.2222%  87.5%  }
+.g61483::after, .g-homepod::after                    { background-position:  88.8889%  87.5%  }
+.g61484::after, .g-apple-watch-waves::after          { background-position: 100%       87.5%  }
+.g61486::after, .g-iphone-icon::after                { background-position:  38.8889%   6.25% }
+.g61487::after, .g-iphone-radio-waves::after         { background-position:  33.3333%  93.75% }
+.g61488::after, .g-iphone-apps::after                { background-position:  44.4444%  93.75% }
+.g61489::after, .g-ipad-icon::after                  { background-position:  66.6667%  93.75% }
+.g61490::after, .g-ipad-landscape::after             { background-position:  83.3333%  93.75% }
+.g61491::after, .g-ipod::after                       { background-position:  44.4444%   0%    }
+.g61493::after, .g-person-run-circle::after          { background-position:   0%      100%    }
+.g61494::after, .g-person-run-motion::after          { background-position:  22.2222% 100%    }
+.g61495::after, .g-person-closed::after              { background-position:  44.4444% 100%    }
+.g61496::after, .g-person-open::after                { background-position:  72.2222% 100%    }
+.g61497::after, .g-directions-arrow-diamond::after   { background-position:  77.7778% 100%    }
+.g61498::after, .g-directions-arrow-circle::after    { background-position: 100%      100%    }
+.g61499::after, .g-airplay-audio::after              { background-position:  83.3333%  50%    }
+.g61500::after, .g-airplay-video::after              { background-position:  11.1111%  56.25% }
+.g61501::after, .g-airdrop::after                    { background-position:  33.3333%  56.25% }
+.g61502::after, .g-music-note-list::after            { background-position:  55.5556%  56.25% }
+.g61503::after, .g-music-note::after                 { background-position:  83.3333%  56.25% }
+.g61504::after, .g-music-square-stack::after         { background-position:  61.1111%  12.5%  }
+.g61505::after, .g-music-waveform-path::after        { background-position:  33.3333%  25%    }
+.g61506::after, .g-music-live-photo-play::after      { background-position:  55.5556%  25%    }
+.g61507::after, .g-music-live-photo::after           { background-position:  94.4444%  25%    }
+.g61508::after, .g-slowmo::after                     { background-position:  22.2222%  31.25% }
+.g61509::after, .g-timelapse::after                  { background-position:  55.5556%  31.25% }
+.g61510::after, .g-calendar-badge-plus::after        { background-position:  88.8889%  31.25% }
+.g61511::after, .g-calendar-badge-exclamation::after { background-position:  94.4444%  18.75% }
+.g61512::after, .g-timer::after                      { background-position:  11.1111%  37.5%  }
+.g61513::after, .g-timer-square::after               { background-position:  38.8889%  37.5%  }
+.g61514::after, .g-compose::after                    { background-position:  77.7778%  37.5%  }
+.g61515::after, .g-duplicate::after                  { background-position:   5.5556%  62.5%  }
+.g61517::after, .g-moon-circle::after                { background-position:  77.7778%  12.5%  }
+.g61518::after, .g-night-shift::after                { background-position:  38.8889%  43.75% }
+.g61519::after, .g-true-tone::after                  { background-position:  61.1111%  43.75% }
+.g61520::after, .g-dial-min::after                   { background-position:  77.7778%   6.25% }
+.g61521::after, .g-dial-max::after                   { background-position:  16.6667%  68.75% }
+.g61522::after, .g-qr-code-viewfinder::after         { background-position:  33.3333%  68.75% }
+.g61523::after, .g-camera-viewfinder::after          { background-position:  66.6667%  68.75% }
+.g61524::after, .g-wallet-pass::after                { background-position:   0%       75%    }
+.g61525::after, .g-appearance::after                 { background-position:  33.3333%  75%    }
+.g61528::after, .g-no-sign::after                    { background-position:  16.6667%  81.25% }
+.g61529::after, .g-command::after                    { background-position:  50%       81.25% }
+.g61530::after, .g-command-circle::after             { background-position:  94.4444%  43.75% }
+.g61531::after, .g-command-square::after             { background-position:  16.6667%  50%    }
+
+/* Suggested sizes (256x256 by default) */
+
+.s44    { --icon-size:  44px }
+.s64    { --icon-size:  64px }
+.s87    { --icon-size:  87px }
+.s128   { --icon-size: 128px }
+:root   { --icon-size: 256px }
+
+/* Common CSS for all icons (iOS 14 glyphs used by default) */
+
+.shortcut-icon {
+    border: none;
+    border-radius: calc(var(--icon-size) / 16);
+    box-sizing: border-box;
+    display: inline-block;
+    height: var(--icon-size);
+    image-rendering: auto;
+    margin: 0;
+    padding: calc(var(--icon-size) / 6.2439);
+    width: var(--icon-size);
+}
+
+.shortcut-icon::after {
+    background-image: url(ios14-glyphs.png);
+    background-repeat: no-repeat;
+    background-size: 1900% 1700%;
+    content: '';
+    height: calc(var(--icon-size) * 0.6796875);
+    position: absolute;
+    text-decoration: none;
+    width: calc(var(--icon-size) * 0.6796875);
+}
+
+/* Alternative glyphs sets (not available yet) */
+
+.ios12.shortcut-icon::after {
+    background-image: url(ios12-glyphs.png);
+}
+
+.ios13.shortcut-icon::after {
+    background-image: url(ios13-glyphs.png);
+}

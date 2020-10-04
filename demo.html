@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="atnbueno/shortcut-icons@github">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>atnbueno/shortcut-icons@github demo</title>
+    <link rel="preload" href="ios14-glyphs.png" as="image">
+    <link rel="stylesheet" href="ios14-shortcut-icons.css">
+</head>
+
+<body>
+    <!-- Harcoded icon examples -->
+    <h1 class="shortcut-icon c-yellow g-light-bulb s44"></h1>
+    <p class="shortcut-icon c-lime g-text-symbol s64"></p>
+    <div class="shortcut-icon c-purple g-paintbrush s87"></div>
+    <b class="shortcut-icon c-navy g-box-outline s128"></b>
+    <span class="shortcut-icon c-grey-blue g-gears s44"></span>
+    <hr class="shortcut-icon c-tangerine g-masquerade-mask s64">
+    <a class="shortcut-icon c-blue g-magic-wand-2 s87" href="/"></a>
+    <figure class="shortcut-icon c-red g-trash s128"></figure>
+
+    <!-- Random icon examples -->
+    <script>
+        // Data to generate random icons
+        let glyphs = ["ellipsis", "dollar-sign-with-line", "movie-camera-filled", "message-bubbles", "twelve-squares", "globe", "chat-bubble", "laptop", "person-2", "list", "keyboard", "pound-sign", "car", "target-2", "football", "cloud-service", "pill", "open-book", "flower", "hammer-2", "battery", "boxed-keyboard", "feed-2", "play", "magic-wand-1", "euro-sign", "yen-sign", "bitcoin-symbol", "loading-indicator-2", "database", "airplane", "alarm-clock", "alert-triangle", "alien", "ambulance", "archive", "arrow-curved-left", "arrow-curved-right", "asterisk", "atom", "baby", "baby-boy", "bandage", "barcode", "bar-graph", "baseball", "basketball", "bathtub", "bed", "bell", "bicycle", "binoculars", "bookmark", "bookshelf", "book-with-sash", "box-filled", "box-outline", "braille", "briefcase", "buildings", "bus", "cake", "calculator", "calendar", "camera", "carrot", "cat", "chain-link", "chemical", "child", "church", "circled-checkmark", "circled-down-arrow", "circled-download-arrow", "circled-fast-forward", "circled-left-arrow", "circled-lowercase-i", "circled-pi-symbol", "circled-play", "circled-plus", "circled-power", "circled-question-mark", "circled-rewind", "circled-right-arrow", "circled-stop", "circled-up-arrow", "circled-upload-arrow", "circled-x", "clipboard-glyph", "clock", "clothes-hanger", "cloud", "cloud-raining", "color-dropper", "compass", "connected-share-dots", "credit-card", "crop", "cube", "server", "dice", "directions-signs", "document-css", "document-filled", "document-outline", "dog", "double-quote", "drama-masks", "evergreen-tree", "feed-1", "filmstrip", "fire", "fish", "flag", "folder", "footprints", "four-squares", "fruit", "fuel-station", "game-controller", "gears", "gift", "glasses", "graduate-cap", "grocery-store", "hammer-1", "hammer-and-wrench", "handbag", "hand-with-spread-fingers", "hard-drive", "headphones", "heart", "home", "horse", "hourglass", "infinity", "inhaler", "key", "laundry-machine", "life-preserver", "light-bulb", "lightning-bolt", "loading-indicator-1", "location-arrow", "location-pin", "lock", "magic-wand-2", "magnifying-glass", "mail-envelope", "mail-envelope-open", "man", "martini-glass", "masquerade-mask", "medicine-bottle", "message-bubble", "microphone", "microscope", "moon", "motorcycle", "mountain-picture", "mountains", "move-arrows", "movie-ticket", "mug", "music-beamed-eighth-notes", "news-article", "oven", "paintbrush", "paper-clip", "parking-symbol", "pawprint", "peace-sign", "pencil", "people-three-overlapping", "people-two-overlapping", "person-1", "person-at-podium", "person-dancing", "person-giving-speech", "person-hiking", "person-in-wheelchair", "person-lifting-weight", "person-running", "person-skiing", "person-snowboarding", "person-swimming", "person-walking", "person-walking-with-cane", "phone", "pills", "podcasts", "printer", "puzzle-piece", "qr-code", "recycle", "repost-arrows", "rocket", "sailboat", "scissors", "screwdriver", "network-storage", "shirt", "shopping-cart", "shower", "shrink-arrows", "shuffle-arrows", "sliders", "smiley-face", "snowflake", "soaring-paper-airplane", "soccer-ball", "sparkling-bell", "speaker-wave1", "staircase", "star", "steaming-bowl", "stethoscope", "stopwatch", "sun", "sync-arrows", "syringe", "tag", "target-1", "telescope", "television", "tennis-ball", "text-symbol", "thermometer", "three-overlapping-circles", "thumbs-up", "trash", "trophy", "umbrella", "unlock", "utensils", "video-symbol", "watch", "water-drop", "wifi", "wine-bottle", "woman", "wrench", "shortcuts-icon", "book-closed", "map", "car-multiple", "bolt-car", "bus-double-decker", "tram", "tram-tunnel", "gauge", "speedometer", "barometer", "network", "rectangle-stack", "square-stack", "3d-square-stack", "photo-stack", "photo-stack-angled", "camera-aperture", "paper-plane-circle", "note-icon", "note-text", "note-text-badge-plus", "send-message", "add-message", "speaker-wave2", "speaker-wave3", "speaker-slash", "speaker", "tv-and-hifi-speaker", "earpods", "airpods", "airpods-pro", "hifi-speaker", "headphones-circle", "radio", "hearing-aid", "apple-tv", "homepod", "apple-watch-waves", "iphone-icon", "iphone-radio-waves", "iphone-apps", "ipad-icon", "ipad-landscape", "ipod", "person-run-circle", "person-run-motion", "person-closed", "person-open", "directions-arrow-diamond", "directions-arrow-circle", "airplay-audio", "airplay-video", "airdrop", "music-note-list", "music-note", "music-square-stack", "music-waveform-path", "music-live-photo-play", "music-live-photo", "slowmo", "timelapse", "calendar-badge-plus", "calendar-badge-exclamation", "timer", "timer-square", "compose", "duplicate", "moon-circle", "night-shift", "true-tone", "dial-min", "dial-max", "qr-code-viewfinder", "camera-viewfinder", "wallet-pass", "appearance", "no-sign", "command", "command-circle", "command-square"];
+        let colors = ["red", "orange", "tangerine", "yellow", "lime", "teal", "light-blue", "blue", "navy", "grape", "purple", "pink", "grey-blue", "grey-green", "grey-brown"];
+        let sizes = [44, 44, 44, 64, 64, 64, 87, 87, 128];
+
+        // Set hardcoded icon titles to list of classes
+        document.querySelectorAll(".shortcut-icon").forEach(element => {
+            element.setAttribute("title", element.className);
+        });
+
+        // Add random icons to the webpage
+        for (let index = 0; index < 2040; index++) {
+            let randomGlyph = glyphs[Math.floor(Math.random() * glyphs.length)];
+            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+            let randomSize = sizes[Math.floor(Math.random() * sizes.length)];
+            let div = document.createElement("div");
+            let newline = document.createTextNode("\n");
+            document.body.appendChild(div);
+            document.body.appendChild(newline);
+            div.classList.add("ios14");
+            div.classList.add("shortcut-icon");
+            div.classList.add(`c-${randomColor}`);
+            div.classList.add(`g-${randomGlyph}`);
+            div.classList.add(`s${randomSize}`);
+            div.setAttribute("title", div.className);
+        }
+    </script>
+</body>
+
+</html>
