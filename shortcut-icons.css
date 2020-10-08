@@ -1,56 +1,94 @@
+/* Common CSS for all icons (iOS 14 glyphs used by default) */
+
+.shortcut-icon {
+    /* cross drawn with gradients, visible only if no color class added */
+    background-image: linear-gradient(to bottom left, #FFF0 46%, #F00F 46%, #F00F 54%, #FFF0 54%),
+        linear-gradient(to bottom right, #FFF0 46%, #F00F 46%, #F00F 54%, #FFF0 54%);
+    border: none;
+    border-radius: calc(var(--icon-size) / 6);
+    box-shadow: 0 calc(var(--icon-size) / 64) calc(var(--icon-size) / 32) 0 rgba(0, 0, 0, .14);
+    box-sizing: border-box;
+    display: inline-block;
+    height: var(--icon-size);
+    margin: 0;
+    padding: calc(var(--icon-size) / 6.7368421);
+    width: var(--icon-size);
+}
+
+.shortcut-icon::after {
+    background-image: url(ios14-glyphs.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 2000% 1700%;
+    content: '';
+    height: calc(var(--icon-size) * 0.703125);
+    position: absolute;
+    width: calc(var(--icon-size) * 0.703125);
+}
+
+/* Alternate glyphs sets */
+
+.ios13.shortcut-icon::after {
+    background-image: url(ios13-glyphs.png);
+}
+
+.ios12.shortcut-icon::after {
+    background-image: url(ios12-glyphs.png);
+}
+
 /* Shortcut icon colors (iOS 14 palette used by default) */
 
-.c4282601983 { background: linear-gradient(#F36F74, #F2585E) }
-.c4251333119 { background: linear-gradient(#FF8E73, #FF7C5C) }
-.c4271458815 { background: linear-gradient(#F8AE5F, #F7A145) }
-.c4274264319 { background: linear-gradient(#E8CA45, #E5C238) }
-.c4292093695 { background: linear-gradient(#53CD6B, #37C553) }
-.c431817727  { background: linear-gradient(#57CFB4, #2AC7A8) }
-.c1440408063 { background: linear-gradient(#5ACCDE, #3FC4D9) }
-.c463140863  { background: linear-gradient(#24BAF7, #00AFF6) }
-.c946986751  { background: linear-gradient(#5874CA, #3D5EC2) }
-.c2071128575 { background: linear-gradient(#9164C7, #7F4BBE) }
-.c3679049983 { background: linear-gradient(#C085E6, #B671E2) }
-.c3980825855 { background: linear-gradient(#F694D8, #F583D2) }
-.c255        { background: linear-gradient(#9099A3, #7E8994) }
-.c3031607807 { background: linear-gradient(#9DA79D, #8D998E) }
-.c2846468607 { background: linear-gradient(#A49995, #968984) }
+.c4282601983, .c-12365313   { background: linear-gradient(#F36F74, #F2585E) }
+.c4251333119, .c-43634177   { background: linear-gradient(#FF8E73, #FF7C5C) }
+.c4271458815, .c-23508481   { background: linear-gradient(#F8AE5F, #F7A145) }
+.c4274264319, .c-20702977   { background: linear-gradient(#E8CA45, #E5C238) }
+.c4292093695, .c-2873601    { background: linear-gradient(#53CD6B, #37C553) }
+.c431817727 , .c-3863149569 { background: linear-gradient(#57CFB4, #2AC7A8) }
+.c1440408063, .c-2854559233 { background: linear-gradient(#5ACCDE, #3FC4D9) }
+.c463140863 , .c-3831826433 { background: linear-gradient(#24BAF7, #00AFF6) }
+.c946986751 , .c-3347980545 { background: linear-gradient(#5874CA, #3D5EC2) }
+.c2071128575, .c-2223838721 { background: linear-gradient(#9164C7, #7F4BBE) }
+.c3679049983, .c-615917313  { background: linear-gradient(#C085E6, #B671E2) }
+.c3980825855, .c-314141441  { background: linear-gradient(#F694D8, #F583D2) }
+.c255       , .c-4294967041 { background: linear-gradient(#9099A3, #7E8994) }
+.c3031607807, .c-1263359489 { background: linear-gradient(#9DA79D, #8D998E) }
+.c2846468607, .c-1448498689 { background: linear-gradient(#A49995, #968984) }
 
 /* iOS 13 shortcut icon colors */
 
-.ios13.c4282601983 { background: linear-gradient(#E6696D, #E15B5F) }
-.ios13.c4251333119 { background: linear-gradient(#E7755B, #E2664E) }
-.ios13.c4271458815 { background: linear-gradient(#DC8041, #D57136) }
-.ios13.c4274264319 { background: linear-gradient(#D69C2F, #CD8D26) }
-.ios13.c4292093695 { background: linear-gradient(#6DA74F, #5F9943) }
-.ios13.c431817727  { background: linear-gradient(#57A58D, #4A977E) }
-.ios13.c1440408063 { background: linear-gradient(#609EB0, #538FA3) }
-.ios13.c463140863  { background: linear-gradient(#6D92C3, #5F83B8) }
-.ios13.c946986751  { background: linear-gradient(#737EC4, #646FB9) }
-.ios13.c2071128575 { background: linear-gradient(#9076BF, #8167B4) }
-.ios13.c3679049983 { background: linear-gradient(#BE7AC1, #B36BB6) }
-.ios13.c3980825855 { background: linear-gradient(#DD7391, #D66482) }
-.ios13.c255        { background: linear-gradient(#86919C, #77828D) }
-.ios13.c3031607807 { background: linear-gradient(#8D938E, #7E847F) }
-.ios13.c2846468607 { background: linear-gradient(#9D908B, #8E817C) }
+.ios13.c4282601983, .ios13.c-12365313   { background: linear-gradient(#E6696D, #E15B5F) }
+.ios13.c4251333119, .ios13.c-43634177   { background: linear-gradient(#E7755B, #E2664E) }
+.ios13.c4271458815, .ios13.c-23508481   { background: linear-gradient(#DC8041, #D57136) }
+.ios13.c4274264319, .ios13.c-20702977   { background: linear-gradient(#D69C2F, #CD8D26) }
+.ios13.c4292093695, .ios13.c-2873601    { background: linear-gradient(#6DA74F, #5F9943) }
+.ios13.c431817727 , .ios13.c-3863149569 { background: linear-gradient(#57A58D, #4A977E) }
+.ios13.c1440408063, .ios13.c-2854559233 { background: linear-gradient(#609EB0, #538FA3) }
+.ios13.c463140863 , .ios13.c-3831826433 { background: linear-gradient(#6D92C3, #5F83B8) }
+.ios13.c946986751 , .ios13.c-3347980545 { background: linear-gradient(#737EC4, #646FB9) }
+.ios13.c2071128575, .ios13.c-2223838721 { background: linear-gradient(#9076BF, #8167B4) }
+.ios13.c3679049983, .ios13.c-615917313  { background: linear-gradient(#BE7AC1, #B36BB6) }
+.ios13.c3980825855, .ios13.c-314141441  { background: linear-gradient(#DD7391, #D66482) }
+.ios13.c255       , .ios13.c-4294967041 { background: linear-gradient(#86919C, #77828D) }
+.ios13.c3031607807, .ios13.c-1263359489 { background: linear-gradient(#8D938E, #7E847F) }
+.ios13.c2846468607, .ios13.c-1448498689 { background: linear-gradient(#9D908B, #8E817C) }
 
 /* iOS 12 shortcut icon colors */
 
-.ios12.c4282601983 { background: linear-gradient(153.35deg, #FF314C, #BE1922) }
-.ios12.c4251333119 { background: linear-gradient(153.35deg, #F57A53, #D82600) }
-.ios12.c4271458815 { background: linear-gradient(153.35deg, #FF9531, #DF5400) }
-.ios12.c4274264319 { background: linear-gradient(153.35deg, #F2C300, #E57F00) }
-.ios12.c4292093695 { background: linear-gradient(153.35deg, #6BD64D, #329609) }
-.ios12.c431817727  { background: linear-gradient(153.35deg, #60DBBA, #009F8C) }
-.ios12.c1440408063 { background: linear-gradient(153.35deg, #54DBDA, #0094C1) }
-.ios12.c463140863  { background: linear-gradient(153.35deg, #66B7F5, #0073DE) }
-.ios12.c946986751  { background: linear-gradient(153.35deg, #4082E7, #0041B5) }
-.ios12.c2071128575 { background: linear-gradient(153.35deg, #855FEF, #461EB3) }
-.ios12.c3679049983 { background: linear-gradient(153.35deg, #C05BE4, #7D20A8) }
-.ios12.c3980825855 { background: linear-gradient(153.35deg, #FC78B8, #CB2178) }
-.ios12.c255        { background: linear-gradient(153.35deg, #82858A, #4D5053) }
-.ios12.c3031607807 { background: linear-gradient(153.35deg, #A6A49E, #7A7665) }
-.ios12.c2846468607 { background: linear-gradient(153.35deg, #9AA4BA, #677188) }
+.ios12.c4282601983, .ios12.c-12365313   { background: linear-gradient(153.35deg, #FF314C, #BE1922) }
+.ios12.c4251333119, .ios12.c-43634177   { background: linear-gradient(153.35deg, #F57A53, #D82600) }
+.ios12.c4271458815, .ios12.c-23508481   { background: linear-gradient(153.35deg, #FF9531, #DF5400) }
+.ios12.c4274264319, .ios12.c-20702977   { background: linear-gradient(153.35deg, #F2C300, #E57F00) }
+.ios12.c4292093695, .ios12.c-2873601    { background: linear-gradient(153.35deg, #6BD64D, #329609) }
+.ios12.c431817727 , .ios12.c-3863149569 { background: linear-gradient(153.35deg, #60DBBA, #009F8C) }
+.ios12.c1440408063, .ios12.c-2854559233 { background: linear-gradient(153.35deg, #54DBDA, #0094C1) }
+.ios12.c463140863 , .ios12.c-3831826433 { background: linear-gradient(153.35deg, #66B7F5, #0073DE) }
+.ios12.c946986751 , .ios12.c-3347980545 { background: linear-gradient(153.35deg, #4082E7, #0041B5) }
+.ios12.c2071128575, .ios12.c-2223838721 { background: linear-gradient(153.35deg, #855FEF, #461EB3) }
+.ios12.c3679049983, .ios12.c-615917313  { background: linear-gradient(153.35deg, #C05BE4, #7D20A8) }
+.ios12.c3980825855, .ios12.c-314141441  { background: linear-gradient(153.35deg, #FC78B8, #CB2178) }
+.ios12.c255       , .ios12.c-4294967041 { background: linear-gradient(153.35deg, #82858A, #4D5053) }
+.ios12.c3031607807, .ios12.c-1263359489 { background: linear-gradient(153.35deg, #A6A49E, #7A7665) }
+.ios12.c2846468607, .ios12.c-1448498689 { background: linear-gradient(153.35deg, #9AA4BA, #677188) }
 
 /* Shortcut glyph positions in the sprite */
 
@@ -401,36 +439,3 @@
 .s87  { --icon-size:  87px }
 .s128 { --icon-size: 128px }
 :root { --icon-size: 256px }
-
-/* Common CSS for all icons (iOS 14 glyphs used by default) */
-
-.shortcut-icon {
-    border: none;
-    border-radius: calc(var(--icon-size) / 16);
-    box-sizing: border-box;
-    display: inline-block;
-    height: var(--icon-size);
-    margin: 0;
-    padding: calc(var(--icon-size) / 6.7368421);
-    width: var(--icon-size);
-}
-
-.shortcut-icon::after {
-    background-image: url(ios14-glyphs.png);
-    background-repeat: no-repeat;
-    background-size: 2000% 1700%;
-    content: '';
-    height: calc(var(--icon-size) * 0.703125);
-    position: absolute;
-    width: calc(var(--icon-size) * 0.703125);
-}
-
-/* Alternate glyphs sets */
-
-.ios13.shortcut-icon::after {
-    background-image: url(ios13-glyphs.png);
-}
-
-.ios12.shortcut-icon::after {
-    background-image: url(ios12-glyphs.png);
-}
