@@ -1,8 +1,9 @@
 /* Common CSS for all icons (iOS 14 glyphs used by default) */
 
 .shortcut-icon {
+    background-color: #7F7F7F7F;
     /* icon grid, visible only if no color class added */
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" style="background-color: rgba(128,128,128,0.5)" stroke="white" fill="none" stroke-width="0.5"><line x1="0%" y1="0%" x2="100%" y2="100%" /><line x1="0%" y1="100%" x2="100%" y2="0%" /><line x1="0%" y1="5.9%" x2="100%" y2="5.9%" /><line x1="0%" y1="31.6%" x2="100%" y2="31.6%"/><line x1="0%" y1="49.6%" x2="100%" y2="49.6%"/><line x1="0%" y1="68.3%" x2="100%" y2="68.3%"/><line x1="0%" y1="93.3%" x2="100%" y2="93.3%"/><line x1="5.9%" y1="0%" x2="5.9%" y2="100%" /><line x1="31.6%" y1="0%" x2="31.6%" y2="100%" /><line x1="49.6%" y1="0%" x2="49.6%" y2="100%" /><line x1="68.3%" y1="0%" x2="68.3%" y2="100%" /><line x1="93.3%" y1="0%" x2="93.3%" y2="100%" /><circle cx="49.6%" cy="49.6%" r="43.8%"/><circle cx="50%" cy="50%" r="25.7%"/><circle cx="50%" cy="50%" r="18.4%"/></svg>');
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" stroke="white" fill="none" stroke-width="0.5"><line x1="0%" y1="0%" x2="19.2%" y2="19.2%"/><line x1="80.8%" y1="80.8%" x2="100%" y2="100%"/><line x1="0%" y1="100%" x2="19.2%" y2="80.8%"/><line x1="80.8%" y1="19.2%" x2="100%" y2="0%"/><line x1="0%" y1="6%" x2="100%" y2="6%"/><line x1="0%" y1="31.5%" x2="15%" y2="31.5%"/><line x1="85%" y1="31.5%" x2="100%" y2="31.5%"/><line x1="0%" y1="50%" x2="15%" y2="50%"/><line x1="85%" y1="50%" x2="100%" y2="50%"/><line x1="0%" y1="68.5%" x2="15%" y2="68.5%"/><line x1="85%" y1="68.5%" x2="100%" y2="68.5%"/><line x1="0%" y1="94%" x2="100%" y2="94%"/><line x1="6%" y1="0%" x2="6%" y2="100%"/><line x1="31.5%" y1="0%" x2="31.5%" y2="15%"/><line x1="31.5%" y1="85%" x2="31.5%" y2="100%"/><line x1="50%" y1="0%" x2="50%" y2="15%"/><line x1="50%" y1="85%" x2="50%" y2="100%"/><line x1="68.5%" y1="0%" x2="68.5%" y2="15%"/><line x1="68.5%" y1="85%" x2="68.5%" y2="100%"/><line x1="94%" y1="0%" x2="94%" y2="100%"/><circle cx="50%" cy="50%" r="44%"/></svg>');
     border-radius: calc(var(--icon-size) / 6);
     box-shadow: 0 calc(var(--icon-size) / 64) calc(var(--icon-size) / 32) 0 rgba(0, 0, 0, .14);
     box-sizing: border-box;
@@ -24,7 +25,7 @@
     width: calc(var(--icon-size) * 0.703125);
 }
 
-/* Alternate glyphs sets */
+/* Alternate glyph sets */
 
 .ios13.shortcut-icon::after {
     background-image: url(ios13-glyphs.png);
