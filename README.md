@@ -26,9 +26,9 @@ And if you need a size not in the CSS, it's easy to define your own. For example
 
 To access a shortcut's metadata add `api/records/` after `shortcuts/` in its iCloud link. Example:
 
-<www.icloud.com/shortcuts/0e011689efc949a291f231333c6dd2b3>\
+https://www.icloud.com/shortcuts/0e011689efc949a291f231333c6dd2b3\
 ↓\
-<www.icloud.com/shortcuts/api/records/0e011689efc949a291f231333c6dd2b3>
+https://www.icloud.com/shortcuts/api/records/0e011689efc949a291f231333c6dd2b3
 
 ## Sites that use this
 
