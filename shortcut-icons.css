@@ -1,27 +1,41 @@
-/* Common CSS for all icons (iOS 14 glyphs used by default) */
+/* Suggested sizes (256x256 by default) */
+
+.s43  { --icon-size:  43px }
+.s64  { --icon-size:  64px }
+.s86  { --icon-size:  86px }
+.s128 { --icon-size: 128px }
+:root { --icon-size: 256px }
+
+/* Common CSS for all icons */
 
 .shortcut-icon {
+    /* SVG partial icon grid and gray background color, visible only if no color class is used */
     background-color: #7F7F7F7F;
-    /* icon grid, visible only if no color class added */
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" stroke="white" fill="none" stroke-width="0.5"><line x1="0%" y1="0%" x2="19.2%" y2="19.2%"/><line x1="80.8%" y1="80.8%" x2="100%" y2="100%"/><line x1="0%" y1="100%" x2="19.2%" y2="80.8%"/><line x1="80.8%" y1="19.2%" x2="100%" y2="0%"/><line x1="0%" y1="6%" x2="100%" y2="6%"/><line x1="0%" y1="31.5%" x2="15%" y2="31.5%"/><line x1="85%" y1="31.5%" x2="100%" y2="31.5%"/><line x1="0%" y1="50%" x2="15%" y2="50%"/><line x1="85%" y1="50%" x2="100%" y2="50%"/><line x1="0%" y1="68.5%" x2="15%" y2="68.5%"/><line x1="85%" y1="68.5%" x2="100%" y2="68.5%"/><line x1="0%" y1="94%" x2="100%" y2="94%"/><line x1="6%" y1="0%" x2="6%" y2="100%"/><line x1="31.5%" y1="0%" x2="31.5%" y2="15%"/><line x1="31.5%" y1="85%" x2="31.5%" y2="100%"/><line x1="50%" y1="0%" x2="50%" y2="15%"/><line x1="50%" y1="85%" x2="50%" y2="100%"/><line x1="68.5%" y1="0%" x2="68.5%" y2="15%"/><line x1="68.5%" y1="85%" x2="68.5%" y2="100%"/><line x1="94%" y1="0%" x2="94%" y2="100%"/><circle cx="50%" cy="50%" r="44%"/></svg>');
+    /* iCloud link icons show a radius/size ratio of 1/6, although the closest ratio of iOS app icons is 2/9 */
     border-radius: calc(var(--icon-size) / 6);
+    /* shadow imitates the appearance of iCloud link icons */
     box-shadow: 0 calc(var(--icon-size) / 64) calc(var(--icon-size) / 32) 0 rgba(0, 0, 0, .14);
     box-sizing: border-box;
     display: inline-block;
     height: var(--icon-size);
-    margin: 0;
+    /* padding equivalent to 38/256, leaving 180/256 for the content */
     padding: calc(var(--icon-size) / 6.7368421);
     width: var(--icon-size);
 }
 
 .shortcut-icon::after {
+    /* iOS 14 glyphs used by default (no .ios14 class necessary) */
     background-image: url(ios14-glyphs.png);
+    /* PNG partial icon grid is in the bottom right corner of the glyph, visible only if no glyph class is used */
     background-position: right bottom;
-    background-repeat: no-repeat;
+    /* glyphs are arranged in a 20x17 matrix */
     background-size: 2000% 1700%;
     content: '';
+    /* height equivalent to 180/256 */
     height: calc(var(--icon-size) * 0.703125);
     position: absolute;
+    /* width equivalent to 180/256 */
     width: calc(var(--icon-size) * 0.703125);
 }
 
@@ -35,7 +49,7 @@
     background-image: url(ios12-glyphs.png);
 }
 
-/* Shortcut icon colors (iOS 14 palette used by default) */
+/* Shortcut icon colors (both positive and negative values, iOS 14 palette used by default) */
 
 .c4282601983, .c-12365313   { background: linear-gradient(#F36F74, #F2585E) }
 .c4251333119, .c-43634177   { background: linear-gradient(#FF8E73, #FF7C5C) }
@@ -53,7 +67,7 @@
 .c3031607807, .c-1263359489 { background: linear-gradient(#9DA79D, #8D998E) }
 .c2846468607, .c-1448498689 { background: linear-gradient(#A49995, #968984) }
 
-/* iOS 13 shortcut icon colors */
+/* iOS 13 shortcut icon colors (both positive and negative values) */
 
 .ios13.c4282601983, .ios13.c-12365313   { background: linear-gradient(#E6696D, #E15B5F) }
 .ios13.c4251333119, .ios13.c-43634177   { background: linear-gradient(#E7755B, #E2664E) }
@@ -71,7 +85,7 @@
 .ios13.c3031607807, .ios13.c-1263359489 { background: linear-gradient(#8D938E, #7E847F) }
 .ios13.c2846468607, .ios13.c-1448498689 { background: linear-gradient(#9D908B, #8E817C) }
 
-/* iOS 12 shortcut icon colors */
+/* iOS 12 shortcut icon colors (both positive and negative values) */
 
 .ios12.c4282601983, .ios12.c-12365313   { background: linear-gradient(153.35deg, #FF314C, #BE1922) }
 .ios12.c4251333119, .ios12.c-43634177   { background: linear-gradient(153.35deg, #F57A53, #D82600) }
@@ -89,7 +103,7 @@
 .ios12.c3031607807, .ios12.c-1263359489 { background: linear-gradient(153.35deg, #A6A49E, #7A7665) }
 .ios12.c2846468607, .ios12.c-1448498689 { background: linear-gradient(153.35deg, #9AA4BA, #677188) }
 
-/* Shortcut glyph positions in the sprite */
+/* Shortcut glyph positions in the sprites (non-existing glyphs show as empty) */
 
 .g59714::after { background-position:   0%        0%    }
 .g59827::after { background-position:   5.2632%   0%    }
@@ -430,11 +444,3 @@
 .g59705::after { background-position:  84.2105% 100%    }
 .g59812::after { background-position:  89.4737% 100%    }
 .g61524::after { background-position:  94.7368% 100%    }
-
-/* Suggested sizes (256x256 by default) */
-
-.s44  { --icon-size:  44px }
-.s64  { --icon-size:  64px }
-.s87  { --icon-size:  87px }
-.s128 { --icon-size: 128px }
-:root { --icon-size: 256px }
