@@ -38,3 +38,9 @@ To access a shortcut's metadata add `api/records/` after `shortcuts/` in its iCl
 ## License
 
 As the [LICENSE](https://github.com/atnbueno/shortcut-icons/blob/main/LICENSE) explains, I don't claim authorship of the glyphs. Those are Apple's and I'm using them to show what can be seen in publicly published iCloud links. The limited resolution of the assets is intentional.
+
+## Credits
+
+Thanks to [@ActuallyZach](https://github.com/ActuallyZach) for providing the hi-res versions of the glyphs since iOS 12. Without them I don't think I'd have the patience to do this.
+
+Thanks also to [@hmhrex](https://github.com/hmhrex) for his feedback.
