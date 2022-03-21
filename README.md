@@ -33,7 +33,7 @@ To access a shortcut's metadata add `api/records/` after `shortcuts/` in its iCl
 ## Sites that use this
 
 - [RoutineHub](https://routinehub.co/)
-- My (non-public yet 😅) website
+- [Live demo in my site](https://atnbueno.com/shortcut-icons/demo.html)
 
 ## License
 
