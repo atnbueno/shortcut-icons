@@ -25,12 +25,12 @@
 }
 
 .shortcut-icon::after {
-    /* iOS 16 glyphs used by default (no .ios16 class necessary) */
-    background-image: url(ios16-glyphs.png);
+    /* iOS 18 glyphs used by default (no .ios18 class necessary) */
+    background-image: url(ios18-glyphs.png);
     /* PNG partial icon grid is in the top left corner of the glyph, visible only if no glyph class is used */
     background-position: top left;
-    /* glyphs are arranged in a 20x19 matrix */
-    background-size: 2000% 1900%;
+    /* glyphs are arranged in a 20x30 matrix */
+    background-size: 2000% 3000%;
     content: '';
     /* height equivalent to 180/256 */
     height: calc(var(--icon-size) * 0.703125);
@@ -40,6 +40,14 @@
 }
 
 /* Alternate glyph sets */
+
+.ios17.shortcut-icon::after {
+    background-image: url(ios17-glyphs.png);
+}
+
+.ios16.shortcut-icon::after {
+    background-image: url(ios16-glyphs.png);
+}
 
 .ios15.shortcut-icon::after {
     background-image: url(ios15-glyphs.png);
@@ -57,7 +65,7 @@
     background-image: url(ios12-glyphs.png);
 }
 
-/* Shortcut icon colors (both positive and negative values, iOS 14-16 palette used by default) */
+/* Shortcut icon colors (both positive and negative values, iOS 14-18 palette used by default) */
 
 .c4282601983, .c-12365313   { background: linear-gradient(#F36F74, #F2585E) }
 .c4251333119, .c-43634177   { background: linear-gradient(#FF8E73, #FF7C5C) }
@@ -113,152 +121,204 @@
 
 /* Shortcut glyph positions in the sprites (non-existing glyphs show as empty) */
 
-.g59392::after, .g59497::after, .g59660::after, .g59680::after,
-.g59704::after, .g59725::after, .g59496::after, .g59745::after,
-.g59460::after, .g59767::after, .g59788::after, .g59394::after,
-.g59808::after, .g59828::after, .g59500::after, .g59849::after,
-.g59870::after, .g61464::after, .g61486::after, .g61507::after,
-.g61530::after, .g61550::after, .g61570::after                  { background-position-x:   5.2632% }
-.g59395::after, .g59513::after, .g59691::after, .g59508::after,
-.g59661::after, .g59681::after, .g59705::after, .g59504::after,
-.g59726::after, .g59470::after, .g59531::after, .g59765::after,
-.g59766::after, .g59746::after, .g59517::after, .g59768::after,
-.g59416::after, .g59789::after, .g59476::after, .g59809::after,
-.g59829::after, .g59850::after, .g59411::after, .g61440::after,
-.g61465::after, .g61487::after, .g61508::after, .g61531::after,
-.g61551::after, .g61571::after                                  { background-position-x:  10.5263% }
-.g59402::after, .g59583::after, .g59511::after, .g59662::after,
-.g59682::after, .g59401::after, .g59706::after, .g59727::after,
-.g59487::after, .g59747::after, .g59769::after, .g59469::after,
-.g59536::after, .g59790::after, .g59479::after, .g59559::after,
-.g59560::after, .g59579::after, .g59810::after, .g59830::after,
-.g59831::after, .g59851::after, .g61442::after, .g61466::after,
-.g61488::after, .g61509::after, .g61532::after, .g61552::after,
-.g61572::after                                                  { background-position-x:  15.7895% }
+.g59497::after, .g59660::after, .g59680::after, .g59704::after,
+.g59725::after, .g59496::after, .g59745::after, .g59460::after,
+.g59767::after, .g59788::after, .g59394::after, .g59808::after,
+.g59828::after, .g59500::after, .g59849::after, .g59870::after,
+.g61464::after, .g61486::after, .g61507::after, .g61530::after,
+.g61550::after, .g61570::after, .g61591::after, .g61719::after,
+.g61751::after, .g61783::after, .g61815::after, .g61847::after,
+.g61975::after, .g62007::after, .g62040::after, .g62072::after,
+.g62104::after                                                  { background-position-x:   0.0000% }
+.g59392::after, .g59508::after, .g59661::after, .g59681::after,
+.g59705::after, .g59504::after, .g59726::after, .g59470::after,
+.g59531::after, .g59765::after, .g59766::after, .g59746::after,
+.g59517::after, .g59768::after, .g59416::after, .g59789::after,
+.g59476::after, .g59809::after, .g59829::after, .g59850::after,
+.g59411::after, .g61440::after, .g61465::after, .g61487::after,
+.g61508::after, .g61531::after, .g61551::after, .g61571::after,
+.g61592::after, .g61720::after, .g61752::after, .g61784::after,
+.g61816::after, .g61848::after, .g61976::after, .g62008::after,
+.g62041::after, .g62073::after, .g62105::after                  { background-position-x:   5.2632% }
+.g59395::after, .g59513::after, .g59691::after, .g59511::after,
+.g59662::after, .g59682::after, .g59401::after, .g59706::after,
+.g59727::after, .g59487::after, .g59747::after, .g59769::after,
+.g59469::after, .g59536::after, .g59790::after, .g59479::after,
+.g59559::after, .g59560::after, .g59579::after, .g59810::after,
+.g59830::after, .g59441::after, .g59831::after, .g59851::after,
+.g61442::after, .g61466::after, .g61488::after, .g61509::after,
+.g61532::after, .g61552::after, .g61572::after, .g61593::after,
+.g61721::after, .g61753::after, .g61785::after, .g61817::after,
+.g61849::after, .g61977::after, .g62009::after, .g62048::after,
+.g62080::after, .g62208::after                                  { background-position-x:  10.5263% }
+.g59402::after, .g59583::after, .g59512::after, .g59449::after,
+.g59694::after, .g59663::after, .g59683::after, .g59707::after,
+.g59505::after, .g59520::after, .g59728::after, .g59748::after,
+.g59473::after, .g59770::after, .g59492::after, .g59791::after,
+.g59582::after, .g59811::after, .g59483::after, .g59832::after,
+.g59507::after, .g59852::after, .g61444::after, .g61467::after,
+.g61489::after, .g61510::after, .g61533::after, .g61553::after,
+.g61573::after, .g61696::after, .g61728::after, .g61760::after,
+.g61792::after, .g61824::after, .g61952::after, .g61984::after,
+.g62016::after, .g62049::after, .g62081::after, .g62209::after  { background-position-x:  15.7895% }
 .g59403::after, .g59557::after, .g59558::after, .g59573::after,
-.g59512::after, .g59694::after, .g59663::after, .g59683::after,
-.g59707::after, .g59505::after, .g59520::after, .g59728::after,
-.g59748::after, .g59473::after, .g59770::after, .g59492::after,
-.g59791::after, .g59582::after, .g59811::after, .g59483::after,
-.g59832::after, .g59507::after, .g59852::after, .g61444::after,
-.g61467::after, .g61489::after, .g61510::after, .g61533::after,
-.g61553::after, .g61573::after                                  { background-position-x:  21.0526% }
-.g59405::after, .g59514::after, .g59710::after, .g59664::after,
+.g59514::after, .g59447::after, .g59710::after, .g59664::after,
 .g59684::after, .g59708::after, .g59729::after, .g59439::after,
 .g59749::after, .g59450::after, .g59771::after, .g59792::after,
 .g59812::after, .g59833::after, .g59853::after, .g61446::after,
 .g61468::after, .g61490::after, .g61511::after, .g61534::after,
-.g61554::after, .g61574::after                                  { background-position-x:  26.3158% }
-.g59412::after, .g59526::after, .g59547::after, .g59515::after,
-.g59464::after, .g59689::after, .g59665::after, .g59685::after,
-.g59529::after, .g59546::after, .g59555::after, .g59556::after,
-.g59564::after, .g59565::after, .g59580::after, .g59709::after,
-.g59422::after, .g59730::after, .g59750::after, .g59772::after,
-.g59444::after, .g59543::after, .g59793::after, .g59521::after,
-.g59522::after, .g59528::after, .g59530::after, .g59813::after,
-.g59834::after, .g59854::after, .g61447::after, .g61470::after,
-.g61491::after, .g61512::after, .g61535::after, .g61555::after,
-.g61575::after                                                  { background-position-x:  31.5789% }
+.g61554::after, .g61574::after, .g61697::after, .g61729::after,
+.g61761::after, .g61793::after, .g61825::after, .g61953::after,
+.g61985::after, .g62017::after, .g62050::after, .g62082::after,
+.g62210::after                                                  { background-position-x:  21.0526% }
+.g59405::after, .g59515::after, .g59464::after, .g59689::after,
+.g59665::after, .g59685::after, .g59529::after, .g59546::after,
+.g59555::after, .g59556::after, .g59564::after, .g59565::after,
+.g59580::after, .g59709::after, .g59422::after, .g59730::after,
+.g59750::after, .g59772::after, .g59444::after, .g59543::after,
+.g59793::after, .g59521::after, .g59522::after, .g59528::after,
+.g59530::after, .g59813::after, .g59834::after, .g59854::after,
+.g61447::after, .g61470::after, .g61491::after, .g61512::after,
+.g61535::after, .g61555::after, .g61575::after, .g61698::after,
+.g61730::after, .g61762::after, .g61794::after, .g61826::after,
+.g61954::after, .g61986::after, .g62018::after, .g62051::after,
+.g62083::after, .g62211::after                                  { background-position-x:  26.3158% }
+.g59412::after, .g59526::after, .g59547::after, .g59516::after,
+.g59666::after, .g59686::after, .g59711::after, .g59731::after,
+.g59478::after, .g59751::after, .g59471::after, .g59773::after,
+.g59409::after, .g59794::after, .g59814::after, .g59498::after,
+.g59835::after, .g59491::after, .g59856::after, .g59433::after,
+.g61448::after, .g61471::after, .g61493::after, .g61513::after,
+.g61536::after, .g61556::after, .g61576::after, .g61699::after,
+.g61731::after, .g61763::after, .g61795::after, .g61827::after,
+.g61955::after, .g61987::after, .g62019::after, .g62052::after,
+.g62084::after, .g62212::after                                  { background-position-x:  31.5789% }
 .g59414::after, .g59569::after, .g59570::after, .g59855::after,
-.g59516::after, .g59666::after, .g59686::after, .g59711::after,
-.g59731::after, .g59478::after, .g59751::after, .g59471::after,
-.g59773::after, .g59409::after, .g59794::after, .g59814::after,
-.g59498::after, .g59835::after, .g59491::after, .g59856::after,
-.g59433::after, .g61448::after, .g61471::after, .g61493::after,
-.g61513::after, .g61536::after, .g61556::after, .g61576::after  { background-position-x:  36.8421% }
+.g59519::after, .g59667::after, .g59426::after, .g59687::after,
+.g59712::after, .g59415::after, .g59732::after, .g59752::after,
+.g59420::after, .g59774::after, .g59795::after, .g59815::after,
+.g59461::after, .g59836::after, .g59857::after, .g59398::after,
+.g61449::after, .g61472::after, .g61494::after, .g61514::after,
+.g61537::after, .g61557::after, .g61577::after, .g61700::after,
+.g61732::after, .g61764::after, .g61796::after, .g61828::after,
+.g61956::after, .g61988::after, .g62020::after, .g62053::after,
+.g62085::after                                                  { background-position-x:  36.8421% }
 .g59436::after, .g59523::after, .g59524::after, .g59537::after,
 .g59538::after, .g59539::after, .g59540::after, .g59541::after,
-.g59561::after, .g59519::after, .g59667::after, .g59426::after,
-.g59687::after, .g59712::after, .g59415::after, .g59732::after,
-.g59752::after, .g59420::after, .g59774::after, .g59795::after,
-.g59815::after, .g59836::after, .g59857::after, .g59398::after,
-.g61449::after, .g61472::after, .g61494::after, .g61514::after,
-.g61537::after, .g61557::after, .g61577::after                  { background-position-x:  42.1053% }
-.g59437::after, .g59648::after, .g59406::after, .g59668::after,
+.g59561::after, .g59648::after, .g59406::after, .g59668::after,
 .g59688::after, .g59435::after, .g59713::after, .g59733::after,
 .g59438::after, .g59753::after, .g59472::after, .g59775::after,
 .g59796::after, .g59429::after, .g59816::after, .g59837::after,
 .g59858::after, .g61450::after, .g61473::after, .g59502::after,
 .g61495::after, .g61515::after, .g61538::after, .g61558::after,
-.g61578::after                                                  { background-position-x:  47.3684% }
-.g59445::after, .g59649::after, .g59669::after, .g59690::after,
+.g61578::after, .g61701::after, .g61733::after, .g61765::after,
+.g61797::after, .g61829::after, .g61957::after, .g61989::after,
+.g62021::after, .g62054::after, .g62086::after                  { background-position-x:  42.1053% }
+.g59437::after, .g59649::after, .g59669::after, .g59690::after,
 .g59421::after, .g59566::after, .g59714::after, .g59734::after,
 .g59443::after, .g59754::after, .g59481::after, .g59542::after,
 .g59776::after, .g59400::after, .g59797::after, .g59817::after,
 .g59838::after, .g59859::after, .g59442::after, .g61452::after,
 .g61474::after, .g61496::after, .g61517::after, .g61539::after,
-.g61559::after, .g61579::after                                  { background-position-x:  52.6316% }
-.g59446::after, .g59494::after, .g59650::after, .g59440::after,
-.g59670::after, .g59527::after, .g59692::after, .g59506::after,
-.g59715::after, .g59735::after, .g59755::after, .g59399::after,
-.g59777::after, .g59798::after, .g59475::after, .g59532::after,
-.g59575::after, .g59818::after, .g59451::after, .g59839::after,
-.g59860::after, .g59466::after, .g61453::after, .g61475::after,
-.g61497::after, .g61518::after, .g61540::after, .g61560::after,
-.g61581::after                                                  { background-position-x:  57.8947% }
-.g59448::after, .g59701::after, .g59651::after, .g59671::after,
+.g61559::after, .g61579::after, .g61702::after, .g61734::after,
+.g61766::after, .g61798::after, .g61830::after, .g61958::after,
+.g61990::after, .g62022::after, .g62055::after, .g62087::after { background-position-x:  47.3684% }
+.g59445::after, .g59650::after, .g59440::after, .g59670::after,
+.g59527::after, .g59692::after, .g59506::after, .g59715::after,
+.g59735::after, .g59755::after, .g59399::after, .g59777::after,
+.g59798::after, .g59475::after, .g59532::after, .g59575::after,
+.g59818::after, .g59451::after, .g59839::after, .g59860::after,
+.g59466::after, .g61453::after, .g61475::after, .g61497::after,
+.g61518::after, .g61540::after, .g61560::after, .g61581::after,
+.g61703::after, .g61735::after, .g61767::after, .g61799::after,
+.g61831::after, .g61959::after, .g61991::after, .g62023::after,
+.g62056::after, .g62088::after                                  { background-position-x:  52.6316% }
+.g59446::after, .g59494::after, .g59651::after, .g59671::after,
 .g59419::after, .g59693::after, .g59716::after, .g59736::after,
 .g59458::after, .g59756::after, .g59778::after, .g59799::after,
 .g59413::after, .g59819::after, .g59840::after, .g59861::after,
 .g59482::after, .g61454::after, .g61476::after, .g61498::after,
-.g61519::after, .g61541::after, .g61561::after, .g61582::after  { background-position-x:  63.1579% }
-.g59452::after, .g59652::after, .g59425::after, .g59672::after,
-.g59695::after, .g59717::after, .g59453::after, .g59737::after,
-.g59474::after, .g59757::after, .g59457::after, .g59779::after,
-.g59800::after, .g59533::after, .g59534::after, .g59544::after,
-.g59545::after, .g59567::after, .g59568::after, .g59574::after,
-.g59820::after, .g59518::after, .g59841::after, .g59417::after,
-.g59862::after, .g59493::after, .g61455::after, .g61477::after,
-.g61499::after, .g61520::after, .g61542::after, .g61562::after,
-.g61583::after                                                  { background-position-x:  68.4211% }
-.g59454::after, .g59653::after, .g59673::after, .g59509::after,
+.g61519::after, .g61541::after, .g61561::after, .g61582::after,
+.g61704::after, .g61736::after, .g61768::after, .g61800::after,
+.g61832::after, .g61960::after, .g61992::after, .g62024::after,
+.g62057::after, .g62089::after                                  { background-position-x:  57.8947% }
+.g59448::after, .g59701::after, .g59652::after, .g59425::after,
+.g59672::after, .g59695::after, .g59717::after, .g59453::after,
+.g59737::after, .g59474::after, .g59757::after, .g59457::after,
+.g59779::after, .g59800::after, .g59533::after, .g59534::after,
+.g59544::after, .g59545::after, .g59567::after, .g59568::after,
+.g59574::after, .g59820::after, .g59518::after, .g59841::after,
+.g59417::after, .g59862::after, .g59493::after, .g61455::after,
+.g61477::after, .g61499::after, .g61520::after, .g61542::after,
+.g61562::after, .g61583::after, .g61705::after, .g61737::after,
+.g61769::after, .g61801::after, .g61833::after, .g61961::after,
+.g61993::after, .g62025::after, .g62064::after, .g62096::after  { background-position-x:  63.1579% }
+.g59452::after, .g59653::after, .g59673::after, .g59509::after,
 .g59455::after, .g59696::after, .g59503::after, .g59718::after,
 .g59404::after, .g59738::after, .g59428::after, .g59758::after,
 .g59463::after, .g59780::after, .g59501::after, .g59801::after,
 .g59821::after, .g59430::after, .g59842::after, .g59863::after,
 .g59477::after, .g61456::after, .g61478::after, .g61500::after,
-.g61521::after, .g61543::after, .g61563::after, .g61584::after  { background-position-x:  73.6842% }
-.g59456::after, .g59654::after, .g59393::after, .g59674::after,
+.g61521::after, .g61543::after, .g61563::after, .g61584::after,
+.g61712::after, .g61744::after, .g61776::after, .g61808::after,
+.g61840::after, .g61968::after, .g62000::after, .g62033::after,
+.g62065::after, .g62097::after                                  { background-position-x:  68.4211% }
+.g59454::after, .g59654::after, .g59393::after, .g59674::after,
 .g59510::after, .g59697::after, .g59480::after, .g59719::after,
 .g59462::after, .g59581::after, .g59739::after, .g59759::after,
 .g59781::after, .g59486::after, .g59802::after, .g59431::after,
 .g59822::after, .g59843::after, .g59864::after, .g59571::after,
 .g59572::after, .g59576::after, .g59577::after, .g59578::after,
 .g59787::after, .g61457::after, .g61479::after, .g61501::after,
-.g61522::after, .g61544::after, .g61564::after, .g61585::after  { background-position-x:  78.9474% }
-.g59459::after, .g59551::after, .g59552::after, .g59655::after,
-.g59427::after, .g59675::after, .g59698::after, .g59720::after,
-.g59740::after, .g59760::after, .g59485::after, .g59782::after,
-.g59418::after, .g59803::after, .g59823::after, .g59844::after,
-.g59865::after, .g61458::after, .g61480::after, .g61502::after,
-.g61523::after, .g61545::after, .g61565::after, .g61586::after  { background-position-x:  84.2105% }
-.g59461::after, .g59656::after, .g59676::after, .g59434::after,
-.g59549::after, .g59550::after, .g59699::after, .g59721::after,
-.g59525::after, .g59741::after, .g59761::after, .g59783::after,
-.g59804::after, .g59824::after, .g59424::after, .g59845::after,
-.g59467::after, .g59866::after, .g59488::after, .g61459::after,
-.g61481::after, .g61503::after, .g61524::after, .g61546::after,
-.g61566::after, .g61587::after                                  { background-position-x:  89.4737% }
+.g61522::after, .g61544::after, .g61564::after, .g61585::after,
+.g61713::after, .g61745::after, .g61777::after, .g61809::after,
+.g61841::after, .g61969::after, .g62001::after, .g62034::after,
+.g62066::after, .g62098::after                                  { background-position-x:  73.6842% }
+.g59456::after, .g59655::after, .g59427::after, .g59675::after,
+.g59698::after, .g59720::after, .g59740::after, .g59760::after,
+.g59485::after, .g59782::after, .g59418::after, .g59803::after,
+.g59823::after, .g59844::after, .g59865::after, .g61458::after,
+.g61480::after, .g61502::after, .g61523::after, .g61545::after,
+.g61565::after, .g61586::after, .g61714::after, .g61746::after,
+.g61778::after, .g61810::after, .g61842::after, .g61970::after,
+.g62002::after, .g62035::after, .g62067::after, .g62099::after  { background-position-x:  78.9474% }
+.g59459::after, .g59551::after, .g59552::after, .g59656::after,
+.g59676::after, .g59434::after, .g59549::after, .g59550::after,
+.g59699::after, .g59721::after, .g59525::after, .g59741::after,
+.g59761::after, .g59783::after, .g59804::after, .g59824::after,
+.g59424::after, .g59845::after, .g59467::after, .g59866::after,
+.g59488::after, .g61459::after, .g61481::after, .g61503::after,
+.g61524::after, .g61546::after, .g61566::after, .g61587::after,
+.g61715::after, .g61747::after, .g61779::after, .g61811::after,
+.g61843::after, .g61971::after, .g62003::after, .g62036::after,
+.g62068::after, .g62100::after                                  { background-position-x:  84.2105% }
 .g59465::after, .g59657::after, .g59677::after, .g59432::after,
 .g59700::after, .g59408::after, .g59722::after, .g59742::after,
 .g59495::after, .g59562::after, .g59563::after, .g59762::after,
-.g59784::after, .g59535::after, .g59548::after, .g59553::after,
-.g59554::after, .g59805::after, .g59825::after, .g59846::after,
-.g59397::after, .g59867::after, .g61460::after, .g61482::after,
-.g61504::after, .g61525::after, .g61547::after, .g61567::after,
-.g61588::after                                                  { background-position-x:  94.7368% }
+.g59396::after, .g59784::after, .g59535::after, .g59548::after,
+.g59553::after, .g59554::after, .g59805::after, .g59825::after,
+.g59846::after, .g59397::after, .g59867::after, .g61460::after,
+.g61482::after, .g61504::after, .g61525::after, .g61547::after,
+.g61567::after, .g61588::after, .g61716::after, .g61748::after,
+.g61780::after, .g61812::after, .g61844::after, .g61972::after,
+.g62004::after, .g62037::after, .g62069::after, .g62101::after  { background-position-x:  89.4737% }
 .g59468::after, .g59658::after, .g59678::after, .g59702::after,
 .g59723::after, .g59743::after, .g59499::after, .g59763::after,
 .g59490::after, .g59785::after, .g59806::after, .g59826::after,
 .g59847::after, .g59868::after, .g61461::after, .g61483::after,
 .g61505::after, .g61528::after, .g61548::after, .g61568::after,
-.g61589::after                                                  { background-position-x: 100.0000% }
+.g61589::after, .g61717::after, .g61749::after, .g61781::after,
+.g61813::after, .g61845::after, .g61973::after, .g62005::after,
+.g62038::after, .g62070::after, .g62102::after                  { background-position-x:  94.7368% }
 .g59489::after, .g59659::after, .g59679::after, .g59703::after,
 .g59724::after, .g59744::after, .g59407::after, .g59764::after,
 .g59410::after, .g59786::after, .g59807::after, .g59827::after,
 .g59848::after, .g59423::after, .g59869::after, .g59484::after,
 .g61462::after, .g61484::after, .g61506::after, .g61529::after,
-.g61549::after, .g61569::after                                  { background-position-x:   0.0000% }
+.g61549::after, .g61569::after, .g61590::after, .g61718::after,
+.g61750::after, .g61782::after, .g61814::after, .g61846::after,
+.g61974::after, .g62006::after, .g62039::after, .g62071::after,
+.g62103::after                                                  { background-position-x: 100.0000% }
 
 .g59392::after, .g59395::after, .g59513::after, .g59691::after,
 .g59402::after, .g59583::after, .g59403::after, .g59557::after,
@@ -269,137 +329,189 @@
 .g59540::after, .g59541::after, .g59561::after, .g59437::after,
 .g59445::after, .g59446::after, .g59494::after, .g59448::after,
 .g59701::after, .g59452::after, .g59454::after, .g59456::after,
-.g59459::after, .g59551::after, .g59552::after, .g59461::after,
-.g59465::after, .g59468::after                                  { background-position-y:   0.0000% }
-.g59489::after, .g59497::after, .g59508::after, .g59511::after,
-.g59512::after, .g59694::after, .g59514::after, .g59710::after,
-.g59515::after, .g59464::after, .g59689::after, .g59516::after,
-.g59519::after, .g59648::after, .g59406::after, .g59649::after,
-.g59650::after, .g59440::after, .g59651::after, .g59652::after,
-.g59425::after, .g59653::after, .g59654::after, .g59393::after,
-.g59655::after, .g59427::after, .g59656::after, .g59657::after,
-.g59658::after                                                  { background-position-y:   5.5556% }
-.g59659::after, .g59660::after, .g59661::after, .g59662::after,
-.g59663::after, .g59664::after, .g59665::after, .g59666::after,
-.g59667::after, .g59426::after, .g59668::after, .g59669::after,
-.g59670::after, .g59527::after, .g59671::after, .g59419::after,
-.g59672::after, .g59673::after, .g59509::after, .g59455::after,
-.g59674::after, .g59510::after, .g59675::after, .g59676::after,
-.g59434::after, .g59549::after, .g59550::after, .g59677::after,
-.g59432::after, .g59678::after                                  { background-position-y:  11.1111% }
-.g59679::after, .g59680::after, .g59681::after, .g59682::after,
-.g59401::after, .g59683::after, .g59684::after, .g59685::after,
-.g59529::after, .g59546::after, .g59555::after, .g59556::after,
-.g59564::after, .g59565::after, .g59580::after, .g59686::after,
-.g59687::after, .g59688::after, .g59435::after, .g59690::after,
-.g59421::after, .g59566::after, .g59692::after, .g59506::after,
-.g59693::after, .g59695::after, .g59696::after, .g59503::after,
-.g59697::after, .g59480::after, .g59698::after, .g59699::after,
-.g59700::after, .g59408::after, .g59702::after                  { background-position-y:  16.6667% }
-.g59703::after, .g59704::after, .g59705::after, .g59504::after,
-.g59706::after, .g59707::after, .g59505::after, .g59520::after,
-.g59708::after, .g59709::after, .g59422::after, .g59711::after,
-.g59712::after, .g59415::after, .g59713::after, .g59714::after,
-.g59715::after, .g59716::after, .g59717::after, .g59453::after,
-.g59718::after, .g59404::after, .g59719::after, .g59462::after,
-.g59581::after, .g59720::after, .g59721::after, .g59525::after,
-.g59722::after, .g59723::after                                  { background-position-y:  22.2222% }
-.g59724::after, .g59725::after, .g59496::after, .g59726::after,
-.g59470::after, .g59531::after, .g59765::after, .g59766::after,
-.g59727::after, .g59487::after, .g59728::after, .g59729::after,
-.g59439::after, .g59730::after, .g59731::after, .g59478::after,
-.g59732::after, .g59733::after, .g59438::after, .g59734::after,
-.g59443::after, .g59735::after, .g59736::after, .g59458::after,
-.g59737::after, .g59474::after, .g59738::after, .g59428::after,
-.g59739::after, .g59740::after, .g59741::after, .g59742::after,
-.g59495::after, .g59562::after, .g59563::after, .g59743::after,
-.g59499::after                                                  { background-position-y:  27.7778% }
-.g59744::after, .g59407::after, .g59745::after, .g59460::after,
-.g59746::after, .g59517::after, .g59747::after, .g59748::after,
-.g59473::after, .g59749::after, .g59450::after, .g59750::after,
-.g59751::after, .g59471::after, .g59752::after, .g59420::after,
-.g59753::after, .g59472::after, .g59754::after, .g59481::after,
-.g59542::after, .g59755::after, .g59399::after, .g59756::after,
-.g59757::after, .g59457::after, .g59758::after, .g59463::after,
-.g59759::after, .g59760::after, .g59485::after, .g59761::after,
-.g59762::after, .g59763::after, .g59490::after                  { background-position-y:  33.3333% }
-.g59764::after, .g59410::after, .g59767::after, .g59768::after,
-.g59416::after, .g59769::after, .g59469::after, .g59536::after,
-.g59770::after, .g59492::after, .g59771::after, .g59772::after,
-.g59444::after, .g59543::after, .g59773::after, .g59409::after,
-.g59774::after, .g59775::after, .g59776::after, .g59400::after,
-.g59777::after, .g59778::after, .g59779::after, .g59780::after,
-.g59501::after, .g59781::after, .g59486::after, .g59782::after,
-.g59418::after, .g59783::after, .g59784::after, .g59535::after,
-.g59548::after, .g59553::after, .g59554::after, .g59785::after  { background-position-y:  38.8889% }
-.g59786::after, .g59788::after, .g59394::after, .g59789::after,
-.g59476::after, .g59790::after, .g59479::after, .g59559::after,
-.g59560::after, .g59579::after, .g59791::after, .g59582::after,
-.g59792::after, .g59793::after, .g59521::after, .g59522::after,
-.g59528::after, .g59530::after, .g59794::after, .g59795::after,
-.g59796::after, .g59429::after, .g59797::after, .g59798::after,
-.g59475::after, .g59532::after, .g59575::after, .g59799::after,
-.g59413::after, .g59800::after, .g59533::after, .g59534::after,
-.g59544::after, .g59545::after, .g59567::after, .g59568::after,
-.g59574::after, .g59801::after, .g59802::after, .g59431::after,
-.g59803::after, .g59804::after, .g59805::after, .g59806::after  { background-position-y:  44.4444% }
-.g59807::after, .g59808::after, .g59809::after, .g59810::after,
-.g59811::after, .g59483::after, .g59812::after, .g59813::after,
-.g59814::after, .g59498::after, .g59815::after, .g59816::after,
+.g59459::after, .g59551::after, .g59552::after, .g59465::after,
+.g59468::after, .g59489::after                                  { background-position-y:   0.0000% }
+.g59497::after, .g59508::after, .g59511::after, .g59512::after,
+.g59449::after, .g59694::after, .g59514::after, .g59447::after,
+.g59710::after, .g59515::after, .g59464::after, .g59689::after,
+.g59516::after, .g59519::after, .g59648::after, .g59406::after,
+.g59649::after, .g59650::after, .g59440::after, .g59651::after,
+.g59652::after, .g59425::after, .g59653::after, .g59654::after,
+.g59393::after, .g59655::after, .g59427::after, .g59656::after,
+.g59657::after, .g59658::after, .g59659::after                  { background-position-y:   3.4483% }
+.g59660::after, .g59661::after, .g59662::after, .g59663::after,
+.g59664::after, .g59665::after, .g59666::after, .g59667::after,
+.g59426::after, .g59668::after, .g59669::after, .g59670::after,
+.g59527::after, .g59671::after, .g59419::after, .g59672::after,
+.g59673::after, .g59509::after, .g59455::after, .g59674::after,
+.g59510::after, .g59675::after, .g59676::after, .g59434::after,
+.g59549::after, .g59550::after, .g59677::after, .g59432::after,
+.g59678::after, .g59679::after                                  { background-position-y:   6.8966% }
+.g59680::after, .g59681::after, .g59682::after, .g59401::after,
+.g59683::after, .g59684::after, .g59685::after, .g59529::after,
+.g59546::after, .g59555::after, .g59556::after, .g59564::after,
+.g59565::after, .g59580::after, .g59686::after, .g59687::after,
+.g59688::after, .g59435::after, .g59690::after, .g59421::after,
+.g59566::after, .g59692::after, .g59506::after, .g59693::after,
+.g59695::after, .g59696::after, .g59503::after, .g59697::after,
+.g59480::after, .g59698::after, .g59699::after, .g59700::after,
+.g59408::after, .g59702::after, .g59703::after                  { background-position-y:  10.3448% }
+.g59704::after, .g59705::after, .g59504::after, .g59706::after,
+.g59707::after, .g59505::after, .g59520::after, .g59708::after,
+.g59709::after, .g59422::after, .g59711::after, .g59712::after,
+.g59415::after, .g59713::after, .g59714::after, .g59715::after,
+.g59716::after, .g59717::after, .g59453::after, .g59718::after,
+.g59404::after, .g59719::after, .g59462::after, .g59581::after,
+.g59720::after, .g59721::after, .g59525::after, .g59722::after,
+.g59723::after, .g59724::after                                  { background-position-y:  13.7931% }
+.g59725::after, .g59496::after, .g59726::after, .g59470::after,
+.g59531::after, .g59765::after, .g59766::after, .g59727::after,
+.g59487::after, .g59728::after, .g59729::after, .g59439::after,
+.g59730::after, .g59731::after, .g59478::after, .g59732::after,
+.g59733::after, .g59438::after, .g59734::after, .g59443::after,
+.g59735::after, .g59736::after, .g59458::after, .g59737::after,
+.g59474::after, .g59738::after, .g59428::after, .g59739::after,
+.g59740::after, .g59741::after, .g59742::after, .g59495::after,
+.g59562::after, .g59563::after, .g59743::after, .g59499::after,
+.g59744::after, .g59407::after                                  { background-position-y:  17.2414% }
+.g59745::after, .g59460::after, .g59746::after, .g59517::after,
+.g59747::after, .g59748::after, .g59473::after, .g59749::after,
+.g59450::after, .g59750::after, .g59751::after, .g59471::after,
+.g59752::after, .g59420::after, .g59753::after, .g59472::after,
+.g59754::after, .g59481::after, .g59542::after, .g59755::after,
+.g59399::after, .g59756::after, .g59757::after, .g59457::after,
+.g59758::after, .g59463::after, .g59759::after, .g59760::after,
+.g59485::after, .g59761::after, .g59762::after, .g59396::after,
+.g59763::after, .g59490::after, .g59764::after, .g59410::after  { background-position-y:  20.6897% }
+.g59767::after, .g59768::after, .g59416::after, .g59769::after,
+.g59469::after, .g59536::after, .g59770::after, .g59492::after,
+.g59771::after, .g59772::after, .g59444::after, .g59543::after,
+.g59773::after, .g59409::after, .g59774::after, .g59775::after,
+.g59776::after, .g59400::after, .g59777::after, .g59778::after,
+.g59779::after, .g59780::after, .g59501::after, .g59781::after,
+.g59486::after, .g59782::after, .g59418::after, .g59783::after,
+.g59784::after, .g59535::after, .g59548::after, .g59553::after,
+.g59554::after, .g59785::after, .g59786::after                  { background-position-y:  24.1379% }
+.g59788::after, .g59394::after, .g59789::after, .g59476::after,
+.g59790::after, .g59479::after, .g59559::after, .g59560::after,
+.g59579::after, .g59791::after, .g59582::after, .g59792::after,
+.g59793::after, .g59521::after, .g59522::after, .g59528::after,
+.g59530::after, .g59794::after, .g59795::after, .g59796::after,
+.g59429::after, .g59797::after, .g59798::after, .g59475::after,
+.g59532::after, .g59575::after, .g59799::after, .g59413::after,
+.g59800::after, .g59533::after, .g59534::after, .g59544::after,
+.g59545::after, .g59567::after, .g59568::after, .g59574::after,
+.g59801::after, .g59802::after, .g59431::after, .g59803::after,
+.g59804::after, .g59805::after, .g59806::after, .g59807::after  { background-position-y:  27.5862% }
+.g59808::after, .g59809::after, .g59810::after, .g59811::after,
+.g59483::after, .g59812::after, .g59813::after, .g59814::after,
+.g59498::after, .g59815::after, .g59461::after, .g59816::after,
 .g59817::after, .g59818::after, .g59451::after, .g59819::after,
 .g59820::after, .g59518::after, .g59821::after, .g59430::after,
 .g59822::after, .g59823::after, .g59824::after, .g59424::after,
-.g59825::after, .g59826::after                                  { background-position-y:  50.0000% }
-.g59827::after, .g59828::after, .g59500::after, .g59829::after,
-.g59830::after, .g59831::after, .g59832::after, .g59507::after,
+.g59825::after, .g59826::after, .g59827::after                  { background-position-y:  31.0345% }
+.g59828::after, .g59500::after, .g59829::after, .g59830::after,
+.g59441::after, .g59831::after, .g59832::after, .g59507::after,
 .g59833::after, .g59834::after, .g59835::after, .g59491::after,
 .g59836::after, .g59837::after, .g59838::after, .g59839::after,
 .g59840::after, .g59841::after, .g59417::after, .g59842::after,
 .g59843::after, .g59844::after, .g59845::after, .g59467::after,
-.g59846::after, .g59397::after, .g59847::after                  { background-position-y:  55.5556% }
-.g59848::after, .g59423::after, .g59849::after, .g59850::after,
-.g59411::after, .g59851::after, .g59852::after, .g59853::after,
-.g59854::after, .g59856::after, .g59433::after, .g59857::after,
-.g59398::after, .g59858::after, .g59859::after, .g59442::after,
-.g59860::after, .g59466::after, .g59861::after, .g59482::after,
-.g59862::after, .g59493::after, .g59863::after, .g59477::after,
-.g59864::after, .g59571::after, .g59572::after, .g59576::after,
-.g59577::after, .g59578::after, .g59787::after, .g59865::after,
-.g59866::after, .g59488::after, .g59867::after, .g59868::after  { background-position-y:  61.1111% }
-.g59869::after, .g59484::after, .g59870::after, .g61440::after,
-.g61442::after, .g61444::after, .g61446::after, .g61447::after,
-.g61448::after, .g61449::after, .g61450::after, .g61452::after,
-.g61453::after, .g61454::after, .g61455::after, .g61456::after,
-.g61457::after, .g61458::after, .g61459::after, .g61460::after,
-.g61461::after                                                  { background-position-y:  66.6667% }
-.g61462::after, .g61464::after, .g61465::after, .g61466::after,
-.g61467::after, .g61468::after, .g61470::after, .g61471::after,
-.g61472::after, .g61473::after, .g59502::after, .g61474::after,
-.g61475::after, .g61476::after, .g61477::after, .g61478::after,
-.g61479::after, .g61480::after, .g61481::after, .g61482::after,
-.g61483::after                                                  { background-position-y:  72.2222% }
-.g61484::after, .g61486::after, .g61487::after, .g61488::after,
-.g61489::after, .g61490::after, .g61491::after, .g61493::after,
-.g61494::after, .g61495::after, .g61496::after, .g61497::after,
-.g61498::after, .g61499::after, .g61500::after, .g61501::after,
-.g61502::after, .g61503::after, .g61504::after, .g61505::after  { background-position-y:  77.7778% }
-.g61506::after, .g61507::after, .g61508::after, .g61509::after,
-.g61510::after, .g61511::after, .g61512::after, .g61513::after,
-.g61514::after, .g61515::after, .g61517::after, .g61518::after,
-.g61519::after, .g61520::after, .g61521::after, .g61522::after,
-.g61523::after, .g61524::after, .g61525::after, .g61528::after  { background-position-y:  83.3333% }
-.g61529::after, .g61530::after, .g61531::after, .g61532::after,
-.g61533::after, .g61534::after, .g61535::after, .g61536::after,
-.g61537::after, .g61538::after, .g61539::after, .g61540::after,
-.g61541::after, .g61542::after, .g61543::after, .g61544::after,
-.g61545::after, .g61546::after, .g61547::after, .g61548::after  { background-position-y:  88.8889% }
-.g61549::after, .g61550::after, .g61551::after, .g61552::after,
-.g61553::after, .g61554::after, .g61555::after, .g61556::after,
-.g61557::after, .g61558::after, .g61559::after, .g61560::after,
-.g61561::after, .g61562::after, .g61563::after, .g61564::after,
-.g61565::after, .g61566::after, .g61567::after, .g61568::after  { background-position-y:  94.4444% }
-.g61569::after, .g61570::after, .g61571::after, .g61572::after,
-.g61573::after, .g61574::after, .g61575::after, .g61576::after,
-.g61577::after, .g61578::after, .g61579::after, .g61581::after,
-.g61582::after, .g61583::after, .g61584::after, .g61585::after,
-.g61586::after, .g61587::after, .g61588::after, .g61589::after  { background-position-y: 100.0000% }
+.g59846::after, .g59397::after, .g59847::after, .g59848::after,
+.g59423::after                                                  { background-position-y:  34.4828% }
+.g59849::after, .g59850::after, .g59411::after, .g59851::after,
+.g59852::after, .g59853::after, .g59854::after, .g59856::after,
+.g59433::after, .g59857::after, .g59398::after, .g59858::after,
+.g59859::after, .g59442::after, .g59860::after, .g59466::after,
+.g59861::after, .g59482::after, .g59862::after, .g59493::after,
+.g59863::after, .g59477::after, .g59864::after, .g59571::after,
+.g59572::after, .g59576::after, .g59577::after, .g59578::after,
+.g59787::after, .g59865::after, .g59866::after, .g59488::after,
+.g59867::after, .g59868::after, .g59869::after, .g59484::after  { background-position-y:  37.9310% }
+.g59870::after, .g61440::after, .g61442::after, .g61444::after,
+.g61446::after, .g61447::after, .g61448::after, .g61449::after,
+.g61450::after, .g61452::after, .g61453::after, .g61454::after,
+.g61455::after, .g61456::after, .g61457::after, .g61458::after,
+.g61459::after, .g61460::after, .g61461::after, .g61462::after  { background-position-y:  41.3793% }
+.g61464::after, .g61465::after, .g61466::after, .g61467::after,
+.g61468::after, .g61470::after, .g61471::after, .g61472::after,
+.g61473::after, .g59502::after, .g61474::after, .g61475::after,
+.g61476::after, .g61477::after, .g61478::after, .g61479::after,
+.g61480::after, .g61481::after, .g61482::after, .g61483::after,
+.g61484::after                                                  { background-position-y:  44.8276% }
+.g61486::after, .g61487::after, .g61488::after, .g61489::after,
+.g61490::after, .g61491::after, .g61493::after, .g61494::after,
+.g61495::after, .g61496::after, .g61497::after, .g61498::after,
+.g61499::after, .g61500::after, .g61501::after, .g61502::after,
+.g61503::after, .g61504::after, .g61505::after, .g61506::after  { background-position-y:  48.2759% }
+.g61507::after, .g61508::after, .g61509::after, .g61510::after,
+.g61511::after, .g61512::after, .g61513::after, .g61514::after,
+.g61515::after, .g61517::after, .g61518::after, .g61519::after,
+.g61520::after, .g61521::after, .g61522::after, .g61523::after,
+.g61524::after, .g61525::after, .g61528::after, .g61529::after  { background-position-y:  51.7241% }
+.g61530::after, .g61531::after, .g61532::after, .g61533::after,
+.g61534::after, .g61535::after, .g61536::after, .g61537::after,
+.g61538::after, .g61539::after, .g61540::after, .g61541::after,
+.g61542::after, .g61543::after, .g61544::after, .g61545::after,
+.g61546::after, .g61547::after, .g61548::after, .g61549::after  { background-position-y:  55.1724% }
+.g61550::after, .g61551::after, .g61552::after, .g61553::after,
+.g61554::after, .g61555::after, .g61556::after, .g61557::after,
+.g61558::after, .g61559::after, .g61560::after, .g61561::after,
+.g61562::after, .g61563::after, .g61564::after, .g61565::after,
+.g61566::after, .g61567::after, .g61568::after, .g61569::after  { background-position-y:  58.6207% }
+.g61570::after, .g61571::after, .g61572::after, .g61573::after,
+.g61574::after, .g61575::after, .g61576::after, .g61577::after,
+.g61578::after, .g61579::after, .g61581::after, .g61582::after,
+.g61583::after, .g61584::after, .g61585::after, .g61586::after,
+.g61587::after, .g61588::after, .g61589::after, .g61590::after  { background-position-y:  62.0690% }
+.g61591::after, .g61592::after, .g61593::after, .g61696::after,
+.g61697::after, .g61698::after, .g61699::after, .g61700::after,
+.g61701::after, .g61702::after, .g61703::after, .g61704::after,
+.g61705::after, .g61712::after, .g61713::after, .g61714::after,
+.g61715::after, .g61716::after, .g61717::after, .g61718::after  { background-position-y:  65.5172% }
+.g61719::after, .g61720::after, .g61721::after, .g61728::after,
+.g61729::after, .g61730::after, .g61731::after, .g61732::after,
+.g61733::after, .g61734::after, .g61735::after, .g61736::after,
+.g61737::after, .g61744::after, .g61745::after, .g61746::after,
+.g61747::after, .g61748::after, .g61749::after, .g61750::after  { background-position-y:  68.9655% }
+.g61751::after, .g61752::after, .g61753::after, .g61760::after,
+.g61761::after, .g61762::after, .g61763::after, .g61764::after,
+.g61765::after, .g61766::after, .g61767::after, .g61768::after,
+.g61769::after, .g61776::after, .g61777::after, .g61778::after,
+.g61779::after, .g61780::after, .g61781::after, .g61782::after  { background-position-y:  72.4138% }
+.g61783::after, .g61784::after, .g61785::after, .g61792::after,
+.g61793::after, .g61794::after, .g61795::after, .g61796::after,
+.g61797::after, .g61798::after, .g61799::after, .g61800::after,
+.g61801::after, .g61808::after, .g61809::after, .g61810::after,
+.g61811::after, .g61812::after, .g61813::after, .g61814::after  { background-position-y:  75.8621% }
+.g61815::after, .g61816::after, .g61817::after, .g61824::after,
+.g61825::after, .g61826::after, .g61827::after, .g61828::after,
+.g61829::after, .g61830::after, .g61831::after, .g61832::after,
+.g61833::after, .g61840::after, .g61841::after, .g61842::after,
+.g61843::after, .g61844::after, .g61845::after, .g61846::after  { background-position-y:  79.3103% }
+.g61847::after, .g61848::after, .g61849::after, .g61952::after,
+.g61953::after, .g61954::after, .g61955::after, .g61956::after,
+.g61957::after, .g61958::after, .g61959::after, .g61960::after,
+.g61961::after, .g61968::after, .g61969::after, .g61970::after,
+.g61971::after, .g61972::after, .g61973::after, .g61974::after  { background-position-y:  82.7586% }
+.g61975::after, .g61976::after, .g61977::after, .g61984::after,
+.g61985::after, .g61986::after, .g61987::after, .g61988::after,
+.g61989::after, .g61990::after, .g61991::after, .g61992::after,
+.g61993::after, .g62000::after, .g62001::after, .g62002::after,
+.g62003::after, .g62004::after, .g62005::after, .g62006::after  { background-position-y:  86.2069% }
+.g62007::after, .g62008::after, .g62009::after, .g62016::after,
+.g62017::after, .g62018::after, .g62019::after, .g62020::after,
+.g62021::after, .g62022::after, .g62023::after, .g62024::after,
+.g62025::after, .g62033::after, .g62034::after, .g62035::after,
+.g62036::after, .g62037::after, .g62038::after, .g62039::after  { background-position-y:  89.6552% }
+.g62040::after, .g62041::after, .g62048::after, .g62049::after,
+.g62050::after, .g62051::after, .g62052::after, .g62053::after,
+.g62054::after, .g62055::after, .g62056::after, .g62057::after,
+.g62064::after, .g62065::after, .g62066::after, .g62067::after,
+.g62068::after, .g62069::after, .g62070::after, .g62071::after  { background-position-y:  93.1034% }
+.g62072::after, .g62073::after, .g62080::after, .g62081::after,
+.g62082::after, .g62083::after, .g62084::after, .g62085::after,
+.g62086::after, .g62087::after, .g62088::after, .g62089::after,
+.g62096::after, .g62097::after, .g62098::after, .g62099::after,
+.g62100::after, .g62101::after, .g62102::after, .g62103::after  { background-position-y:  96.5517% }
+.g62104::after, .g62105::after, .g62208::after, .g62209::after,
+.g62210::after, .g62211::after, .g62212::after                  { background-position-y: 100.0000% }
