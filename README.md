@@ -42,6 +42,6 @@ As the [LICENSE](https://github.com/atnbueno/shortcut-icons/blob/main/LICENSE) e
 
 ## Credits
 
-Thanks to [@ActuallyTaylor](https://github.com/ActuallyTaylor/) for her help in getting the hi-res versions of the glyphs since iOS 12. Without them I don't think I'd have the patience to do this.
+Thanks to [@ActuallyTaylor](https://github.com/ActuallyTaylor/) for her help in getting the hi-res versions of the glyphs since iOS 12. Without her I don't think I'd have the patience to do this.
 
 Thanks also to the members of [r/Shortcuts'](https://discord.gg/HrzAhUu) and [RoutineHub's](https://discord.gg/2prYfrSUmc) Discords for their feedback.
