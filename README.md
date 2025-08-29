@@ -33,7 +33,7 @@ To access a shortcut's metadata add `api/records/` after `shortcuts/` in its iCl
 ## Sites that use this
 
 - [RoutineHub](https://routinehub.co/)
-- Cherry's [Shortcuts Glyph Search](https://glyphs.cherrilang.org/)
+- Cherri's [Shortcuts Glyph Search](https://glyphs.cherrilang.org/)
 - [Live demo in my site](https://atnbueno.com/shortcut-icons/demo.html)
 
 ## License
